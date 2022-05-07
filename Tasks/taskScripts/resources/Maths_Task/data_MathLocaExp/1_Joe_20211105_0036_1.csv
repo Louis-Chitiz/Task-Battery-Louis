@@ -1,0 +1,5 @@
+trial_num,expression,expr_onset,expr_dura,expr_offset,choice,choi_onset,choi_dura,choi_offset,blank,blank_onset,blank_offset,blank_dura,correct_ans,i_trial_onset,trial_onset,choice_onset,blank_r_onset,RT,correct,KeyPress
+1,4  +  2,0,1.45,1.45,8        6,1.45,1.45,2.9, ,2.9,3,0.1,2,15.0,15.006752600020263,16.45494830000098,17.9211780000187,None,False,None
+2,2  +  5,3,1.45,4.45,5        7,4.45,1.45,5.9, ,5.9,6,0.1,2,18.0,18.00441240001237,19.45393449999392,20.919711700000335,None,False,None
+3,1  +  7,6,1.45,7.45,8        6,7.45,1.45,8.9, ,8.9,9,0.1,1,21.0,21.003309899999294,22.452246100001503,23.918155199993635,None,False,None
+4,6  +  4,9,1.45,10.45,8        10,10.45,1.45,11.9, ,11.9,12,0.1,2,24.0,24.001646599994274,25.450958900008118,26.917340400017565,None,False,None
