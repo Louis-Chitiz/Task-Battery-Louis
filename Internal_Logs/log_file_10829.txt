@@ -1,0 +1,141 @@
+pygame 2.1.2 (SDL 2.0.18, Python 3.6.13)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Now initializing Hard Math Task
+Now setting up Hard Math Task
+Now running Hard Math Task
+Now starting ESQ for Hard Math Task
+Now initializing Hard Math Task
+Now setting up Hard Math Task
+Now running Hard Math Task
+Now starting ESQ for Hard Math Task
+Now initializing Easy Math Task
+Now setting up Easy Math Task
+Now running Easy Math Task
+Now starting ESQ for Easy Math Task
+Now initializing Easy Math Task
+Now setting up Easy Math Task
+Now running Easy Math Task
+Now starting ESQ for Easy Math Task
+Now initializing Memory Task
+Now setting up Memory Task
+Now running Memory Task
+Now starting ESQ for Memory Task
+Now initializing Memory Task
+Now setting up Memory Task
+Now running Memory Task
+Now starting ESQ for Memory Task
+Now initializing Reading Task
+Now setting up Reading Task
+Now running Reading Task
+Now starting ESQ for Reading Task
+Now initializing Reading Task
+Now setting up Reading Task
+Now running Reading Task
+Now starting ESQ for Reading Task
+Now initializing Movie Task
+Now setting up Movie Task
+Now running Movie Task
+Now starting ESQ for Movie Task
+Now initializing Movie Task
+Now setting up Movie Task
+Now running Movie Task
+Now starting ESQ for Movie Task
+Now initializing Finger Tapping Task
+Now setting up Finger Tapping Task
+Now running Finger Tapping Task
+3.4807 	WARNING 	Speech-to-text recognition module not available (use command `pip install SpeechRecognition` to get it. Transcription will be unavailable.
+3.5182 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+641.1780 	WARNING 	Monitor specification not found. Creating a temporary one...
+641.1850 	WARNING 	User requested fullscreen with size [1440  960], but screen is actually [1920, 1080]. Using actual size
+782.8741 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+957.5592 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1048.0770 	WARNING 	Monitor specification not found. Creating a temporary one...
+1316.6307 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1375.1154 	WARNING 	Monitor specification not found. Creating a temporary one...
+1470.0759 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1578.9248 	WARNING 	ExperimentHandler created with no dataFileName parameter. No data will be saved in the event of a crash
+1644.3198 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1697.3265 	WARNING 	ExperimentHandler created with no dataFileName parameter. No data will be saved in the event of a crash
+1765.7824 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1950.6766 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+2103.7715 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+2399.2283 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+2592.0408 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+2740.4279 	WARNING 	ExperimentHandler created with no dataFileName parameter. No data will be saved in the event of a crash
+Now starting ESQ for Finger Tapping Task
+Now initializing Finger Tapping Task
+Now setting up Finger Tapping Task
+Now running Finger Tapping Task
+2843.6306 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+2906.3896 	WARNING 	ExperimentHandler created with no dataFileName parameter. No data will be saved in the event of a crash
+Now starting ESQ for Finger Tapping Task
+Now initializing GoNoGo Task
+Now setting up GoNoGo Task
+Now running GoNoGo Task
+Now starting ESQ for GoNoGo Task
+Now initializing GoNoGo Task
+Now setting up GoNoGo Task
+Now running GoNoGo Task
+Now starting ESQ for GoNoGo Task
+Now initializing One-Back Task
+Now setting up One-Back Task
+Now running One-Back Task
+3019.3267 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+3195.6984 	WARNING 	TextStim.alignHoriz is deprecated. Use alignText and anchorHoriz attributes instead
+3198.0040 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+3327.6938 	WARNING 	TextStim.alignHoriz is deprecated. Use alignText and anchorHoriz attributes instead
+3329.4817 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+3413.6252 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.png' exists. This will be used instead but changing the filename is advised.
+3413.6579 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.png' exists. This will be used instead but changing the filename is advised.
+3413.6824 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.png' exists. This will be used instead but changing the filename is advised.
+3413.7065 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.png' exists. This will be used instead but changing the filename is advised.
+Now starting ESQ for One-Back Task
+Now initializing One-Back Task
+Now setting up One-Back Task
+Now running One-Back Task
+3541.6077 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+3606.1107 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.png' exists. This will be used instead but changing the filename is advised.
+3606.1371 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.png' exists. This will be used instead but changing the filename is advised.
+3606.1612 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.png' exists. This will be used instead but changing the filename is advised.
+3606.1864 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//OneBack_Task//1back.png' exists. This will be used instead but changing the filename is advised.
+Now starting ESQ for One-Back Task
+Now initializing Zero-Back Task
+Now setting up Zero-Back Task
+Now running Zero-Back Task
+3697.9362 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+3737.1816 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.png' exists. This will be used instead but changing the filename is advised.
+3737.2079 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.png' exists. This will be used instead but changing the filename is advised.
+3737.2320 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.png' exists. This will be used instead but changing the filename is advised.
+3737.2568 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.png' exists. This will be used instead but changing the filename is advised.
+Now starting ESQ for Zero-Back Task
+Now initializing Zero-Back Task
+Now setting up Zero-Back Task
+Now running Zero-Back Task
+3845.8316 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+3890.1325 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.png' exists. This will be used instead but changing the filename is advised.
+3890.1584 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.png' exists. This will be used instead but changing the filename is advised.
+3890.1825 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.png' exists. This will be used instead but changing the filename is advised.
+3890.2071 	WARNING 	Requested image 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.jpg' not found but similar filename 'C:\\Users\\LAMP Lab\\Documents\\GitHub\\THINCLabTestRepo\\Tasks\\taskScripts//resources//ZeroBack_Task//0back.png' exists. This will be used instead but changing the filename is advised.
+Now starting ESQ for Zero-Back Task
+Now initializing Friend Task
+Now setting up Friend Task
+Now running Friend Task
+Now starting ESQ for Friend Task
+Now initializing Friend Task
+Now setting up Friend Task
+Now running Friend Task
+Now starting ESQ for Friend Task
+Now initializing You Task
+Now setting up You Task
+Now running You Task
+Now starting ESQ for You Task
+Now initializing You Task
+Now setting up You Task
+Now running You Task
+Now starting ESQ for You Task
+Success
+3987.1798 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+4145.4720 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+4278.1838 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+4426.4623 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+4553.2917 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)

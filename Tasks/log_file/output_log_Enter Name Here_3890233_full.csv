@@ -1,0 +1,91 @@
+METADATA:
+Block Runtime,Experiment Seed,Subject
+90,3890233,Enter Name Here
+Time after setup,2.9120903000002727
+Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+EXPERIMENT DATA:,Reading Task
+Start Time,8.043877200001589
+Reading start,8.045012200000201,,,,Reading Task,1,3890233,,,
+Reading trial start,9.223813900000096,,,,Reading Task,1,3890233,,"['An electron', 'microscope', 'produces', 'a visible,', 'clear', 'image of', 'small', 'organelles,', 'resulting', 'in', 'a more', 'efficient', 'way to', 'detect', 'pathogens.']",
+Reading trial ended,23.780156500000885,,,,Reading Task,1,3890233,,,
+Reading trial start,23.809994800001732,,,,Reading Task,1,3890233,,"['Intelligence', 'is', 'most', 'often', 'studied', 'in humans', 'but', 'has also', 'been', 'observed', 'in animals,', 'such as', 'dolphins', 'and', 'elephants.']",
+Reading trial ended,38.36317170000257,,,,Reading Task,1,3890233,,,
+Reading trial start,38.3955354000027,,,,Reading Task,1,3890233,,"['Today most', 'newspapers', 'are published', 'online,', 'with', 'frequent', 'updates', 'throughout', 'the day, and', 'some have', 'abandoned', 'their', 'print', 'versions', 'entirely.']",
+Reading trial ended,54.5476004000011,,,,Reading Task,1,3890233,,,
+Reading trial start,58.675123100001656,,,,Reading Task,1,3890233,,"['All', 'mammals', 'have', 'some hair', 'on their', 'skin,', 'even marine', 'mammals', 'like', 'whales and', 'dolphins,', 'which', 'appear', 'to be', 'hairless.']",
+Reading trial ended,74.48203130000184,,,,Reading Task,1,3890233,,,
+Reading trial start,74.51339430000007,,,,Reading Task,1,3890233,,"['Lips', 'are very', 'sensitive', 'to touch,', 'warmth,', 'and cold,', 'they are', 'therefore', 'an important', 'aid for', 'exploring', 'unknown', 'objects', 'for', 'babies.']",
+Reading trial ended,89.06496460000199,,,,Reading Task,1,3890233,,,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,89.07721130000209
+ESQ,1153.1268909000028,,Self_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1157.711578800001,,Self_response,9.0,Experience Sampling Questions,1,3890233,,Marker Started at 9,Reading Task
+ESQ,1157.712158800001,,Modality_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1158.7606123000005,,Modality_response,9.0,Experience Sampling Questions,1,3890233,,Marker Started at 9,Reading Task
+ESQ,1158.761062900001,,Knowledge_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1159.8035949000005,,Knowledge_response,2.0,Experience Sampling Questions,1,3890233,,Marker Started at 2,Reading Task
+ESQ,1159.8039338000017,,Problem_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1160.858595400001,,Problem_response,4.0,Experience Sampling Questions,1,3890233,,Marker Started at 4,Reading Task
+ESQ,1160.859004500002,,Absorption_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1161.9125536000029,,Absorption_response,2.0,Experience Sampling Questions,1,3890233,,Marker Started at 2,Reading Task
+ESQ,1161.9130874000002,,Deliberate_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1163.0075483,,Deliberate_response,2.0,Experience Sampling Questions,1,3890233,,Marker Started at 2,Reading Task
+ESQ,1163.0083187000018,,Focus_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1164.095588600001,,Focus_response,2.0,Experience Sampling Questions,1,3890233,,Marker Started at 2,Reading Task
+ESQ,1164.0962787000026,,Detailed_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1165.1585833999998,,Detailed_response,4.0,Experience Sampling Questions,1,3890233,,Marker Started at 4,Reading Task
+ESQ,1165.1591265999996,,Past_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1166.2115293000024,,Past_response,6.0,Experience Sampling Questions,1,3890233,,Marker Started at 6,Reading Task
+ESQ,1166.2120490000016,,Other_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1167.2755265000014,,Other_response,3.0,Experience Sampling Questions,1,3890233,,Marker Started at 3,Reading Task
+ESQ,1167.276039100001,,Intrusive_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1168.3235213000007,,Intrusive_response,10.0,Experience Sampling Questions,1,3890233,,Marker Started at 10,Reading Task
+ESQ,1168.3239926999995,,Distracting_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1169.3875227000026,,Distracting_response,6.0,Experience Sampling Questions,1,3890233,,Marker Started at 6,Reading Task
+ESQ,1169.3880135,,Future_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1172.6975652,,Future_response,2.0,Experience Sampling Questions,1,3890233,,Marker Started at 2,Reading Task
+ESQ,1172.6979542000008,,Emotion_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1173.7405666000013,,Emotion_response,10.0,Experience Sampling Questions,1,3890233,,Marker Started at 10,Reading Task
+EXPERIMENT DATA:,Reading Task
+Start Time,1173.794470300003
+Reading start,1173.7967178,,,,Reading Task,1,3890233,,,
+Reading trial start,1175.0784387000022,,,,Reading Task,1,3890233,,"['Clock', 'is', 'one of', 'the oldest', 'human', 'inventions,', 'meeting', 'the need', 'to', 'measure', 'intervals', 'of time', 'shorter', 'than', 'a day.']",
+Reading trial ended,1189.754507900001,,,,Reading Task,1,3890233,,,
+Reading trial start,1191.2547734,,,,Reading Task,1,3890233,,"['Film is', 'considered', 'to be', 'an important', 'art', 'form,', 'a source', 'of', 'popular', 'entertainment,', 'and a', 'medium', 'for', 'educating', 'citizens.']",
+Reading trial ended,1206.1125608000002,,,,Reading Task,1,3890233,,,
+Reading trial start,1206.1479266000024,,,,Reading Task,1,3890233,,"['Some', 'rope', 'is still', 'made ', 'from', 'natural', 'fibres,', 'like coir', 'and sisal,', 'despite the ', 'dominance', 'of synthetic', 'fibres', 'such as', 'nylon.']",
+Reading trial ended,1220.7125078000026,,,,Reading Task,1,3890233,,,
+Reading trial start,1220.7662455999998,,,,Reading Task,1,3890233,,"['Frogs', 'are', 'distributed', 'in', 'tropics and', 'sub-arctic', 'regions,', 'but the', 'greatest', 'concentration', 'of species', 'diversity', 'is', 'in tropical', 'rainforests.']",
+Reading trial ended,1235.3825061000025,,,,Reading Task,1,3890233,,,
+Reading trial start,1236.8295862000014,,,,Reading Task,1,3890233,,"['Some', 'bridges', 'are built', 'much', 'taller', 'than', 'necessary,', 'for example,', 'the moon', 'bridge', 'which is', 'often', 'found in', 'east-Asian', 'gardens.']",
+Reading trial ended,1256.3655534000027,,,,Reading Task,1,3890233,,,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,1256.3678455000008
+ESQ,1434.8001655000007,,Self_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1436.3696154999998,,Self_response,5.0,Experience Sampling Questions,1,3890233,,Marker Started at 5,Reading Task
+ESQ,1436.3699890000025,,Future_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1437.3906203000006,,Future_response,9.0,Experience Sampling Questions,1,3890233,,Marker Started at 9,Reading Task
+ESQ,1437.3909405000013,,Intrusive_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1438.4105956000021,,Intrusive_response,9.0,Experience Sampling Questions,1,3890233,,Marker Started at 9,Reading Task
+ESQ,1438.4113101000003,,Problem_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1439.5355388999997,,Problem_response,4.0,Experience Sampling Questions,1,3890233,,Marker Started at 4,Reading Task
+ESQ,1439.5360494000015,,Deliberate_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1440.615552700001,,Deliberate_response,3.0,Experience Sampling Questions,1,3890233,,Marker Started at 3,Reading Task
+ESQ,1440.6161011000004,,Other_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1441.7035533000017,,Other_response,9.0,Experience Sampling Questions,1,3890233,,Marker Started at 9,Reading Task
+ESQ,1441.7041694,,Emotion_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1442.7925294000015,,Emotion_response,8.0,Experience Sampling Questions,1,3890233,,Marker Started at 8,Reading Task
+ESQ,1442.7930726000013,,Distracting_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1443.879521400002,,Distracting_response,10.0,Experience Sampling Questions,1,3890233,,Marker Started at 10,Reading Task
+ESQ,1443.8800236000025,,Modality_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1444.9675308000005,,Modality_response,3.0,Experience Sampling Questions,1,3890233,,Marker Started at 3,Reading Task
+ESQ,1444.9680372000003,,Focus_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1446.0505833999996,,Focus_response,4.0,Experience Sampling Questions,1,3890233,,Marker Started at 4,Reading Task
+ESQ,1446.0509573000018,,Past_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1447.0886683999997,,Past_response,4.0,Experience Sampling Questions,1,3890233,,Marker Started at 4,Reading Task
+ESQ,1447.0891269000022,,Absorption_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1448.1135893000028,,Absorption_response,6.0,Experience Sampling Questions,1,3890233,,Marker Started at 6,Reading Task
+ESQ,1448.1139287000005,,Detailed_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1449.1495708000002,,Detailed_response,5.0,Experience Sampling Questions,1,3890233,,Marker Started at 5,Reading Task
+ESQ,1449.149997200002,,Knowledge_start,,Experience Sampling Questions,1,3890233,,,Reading Task
+ESQ,1450.1966040000007,,Knowledge_response,2.0,Experience Sampling Questions,1,3890233,,Marker Started at 2,Reading Task

@@ -2003,7 +2003,7 @@ def runexp(logfile, expClock, win, writer, resultdict, runtime, dfile,seed):
         import random
         block_a = random.sample(listof, int(len(listof)/2))
         for val in block_a:
-                        listof[:] = [x for x in listof if x != val]
+            listof[:] = [x for x in listof if x != val]
         block_b = listof
         if dfile == 'A':
             Experiment.trials = block_a
@@ -2075,9 +2075,10 @@ def runexp(logfile, expClock, win, writer, resultdict, runtime, dfile,seed):
                     resultdict['Timepoint'], resultdict['Time'], resultdict['Auxillary Data'] = None,None, None
                     stim_t, KeyResp, Resp, KeyPressTime, respRT, correct = stim.show(timer)
                     iscorrect = []
+                    #a = trial['Ans']
                     if trial['Ans'] == KeyResp:
                         iscorrect = True
-                    if trial['Ans'] == 'NA' and KeyResp == 'None':
+                    elif trial['Ans'] == 'NA' and KeyResp == 'None':
                         iscorrect = True
                     else:
                         iscorrect = False

@@ -1,7 +1,40 @@
+
 import os
 import csv
+import numpy as np
 os.chdir(".")
 graddict = {}
+global sentimentdict
+sentimentdict = {}
+if os.path.exists("Analysis/accuracy.csv"):
+    os.remove("Analysis/accuracy.csv")
+with open("Analysis/accuracy.csv","a") as f:
+    newdict = {"Subject":None,"Experience Sampling Questions Response Time":None,
+        "GoNoGo Task Response Time":None, "GoNoGo Task Accuracy":None,
+        "Finger Tapping Task Response Time":None, "Finger Tapping Task Accuracy":None,
+        "One-Back Task Response Time":None, "One-Back Task Accuracy":None,
+        "Zero-Back Task Response Time":None, "Zero-Back Task Accuracy":None,
+        "Hard Math Task Response Time":None, "Hard Math Task Accuracy":None,
+        "Easy Math Task Response Time":None, "Easy Math Task Accuracy":None,
+        "Friend Task Response Time":None, "Friend Task Sentiment":None,
+        "You Task Response Time":None, "You Task Sentiment":None
+        }
+    writer = csv.writer(f)
+    writer.writerow(newdict)
+with open("C:/Users/Ian/Documents/GitHub/THINCLabTestRepo/Tasks/taskScripts/resources/Self_Task/Self_Stimuli.csv",'r') as f:
+    reader = csv.reader(f)
+    for e,row in enumerate(reader):
+        if e == 0:
+            continue
+        sentimentdict.update({row[6]:row[8]})
+        print(row)
+with open("C:/Users/Ian/Documents/GitHub/THINCLabTestRepo/Tasks/taskScripts/resources/Other_Task/Other_Stimuli.csv",'r') as f:
+    reader = csv.reader(f)
+    for e,row in enumerate(reader):
+        if e == 0:
+            continue
+        sentimentdict.update({row[6]:row[8]})
+        print(row)
 with open('Analysis/coords.csv','r') as ft:
     rd = csv.reader(ft)
     for e,row in enumerate(rd):
@@ -35,10 +68,228 @@ if os.path.exists(os.path.join(os.getcwd(),"Analysis/output.csv")):
 with open(os.path.join(os.getcwd(),"Analysis/output.csv"), 'a', newline="") as outf:
     wr = csv.writer(outf)
     wr.writerow(list(line_dict.keys()))
+def sortingfunction(exp,row,resps):
+    global prevtime
+    global en
+    if exp == "Reading Task":
+        # Collect no data
+        pass
+    if exp == "Experience Sampling Questions":
+        # Collect response time
+        
+        print(row)
+        if row[3].split("_")[1] == "start":
+            prevtime = float(row[1])
+        elif row[3].split("_")[1] == "response":
+            resptime = float(row[1]) - prevtime  
+            resps[exp]["Response Time"].append(resptime)
+        pass
+    if exp == "Memory Task":
+        # Collect no data
+        pass
+    if exp == "GoNoGo Task":
+        # Collect response time, % correct
+        try:
+            # Resp time
+            if row[0].split(" ")[1] == "start":
+                prevtime = float(row[1])
+            elif row[0].split(" ")[1] == "end":
+                resptime = float(row[1]) - prevtime  
+                resps[exp]["Response Time"].append(resptime)
+            # Accuracy
+            if row[2] != '':
+                if row[2] == 'noResponse':
+                    if row[9] == 'Type: Go':
+                        resps[exp]["Accuracy"].append(False)
+                if row[2].upper() == 'FALSE':
+                    if row[9] == 'Type: Go':
+                        resps[exp]["Accuracy"].append(True)
+                if row[2].upper() == 'FALSE':
+                    if row[9] == 'Type: NoGo':
+                        resps[exp]["Accuracy"].append(False)
+                if row[2].upper() == 'TRUE':
+                    if row[9] == 'Type: NoGo':
+                        resps[exp]["Accuracy"].append(True)
+        except Exception as e:
+            print(e)
+            pass
+        pass
+    if exp == "Finger Tapping Task": #### NO RESPONSE TIME
+        print(row)
+        if row[1] != "":    
+            if row[0].split(" ",2)[3] == "Trial Start":
+                prevtime = float(row[1])
+            elif row[0].split(" ",2)[3] == "Trial End":
+                resptime = float(row[1]) - prevtime  
+                resps[exp]["Response Time"].append(resptime)
+        if row[0] == 'Finger Tapping Trial End':
+            if row[2].upper() == "TRUE":
+                resps[exp]["Accuracy"].append(True)
+            elif row[2].upper() == "FALSE":
+                resps[exp]["Accuracy"].append(False)
+            else:
+                return 1/0
+        # Collect response time, % correct
+        pass
+    if exp == "One-Back Task": #DONT HAVE THE CORRECT TRUE/FALSE ON TRIALS
+        print(row)
+        if row[0] == "OneBackStimulus Start":
+            prevtime = float(row[1])
+        elif row[0] == "OneBackStimulus End":
+            resptime = float(row[1]) - prevtime  
+            resps[exp]["Response Time"].append(resptime)
+        # Collect response time, % correct
+        if row[0] == "OneBackStimulus End":
+            if row[2].upper() == "TRUE":
+                resps[exp]["Accuracy"].append(True)
+            elif row[2].upper() == "FALSE":
+                resps[exp]["Accuracy"].append(False)
+            else:
+                return 1/0
+        pass
+    if exp == "Zero-Back Task":
+        if row[0] == "ZeroBackStimulus Start":
+            prevtime = float(row[1])
+        elif row[0] == "ZeroBackStimulus End":
+            resptime = float(row[1]) - prevtime  
+            resps[exp]["Response Time"].append(resptime)
+        # Collect response time, % correct
+        if row[0] == "ZeroBackStimulus End":
+            if row[2].upper() == "TRUE":
+                resps[exp]["Accuracy"].append(True)
+            elif row[2].upper() == "FALSE":
+                resps[exp]["Accuracy"].append(False)
+            else:
+                return 1/0
+        pass
+        # Collect response time, % correct
+        pass
+    if exp == "Hard Math Task":
+        print(row)
+        if row[0] == 'Choice presented':
+            prevtime = float(row[1])
+        elif row[0] == 'Choice made':
+            resptime = float(row[1]) - prevtime  
+            resps[exp]["Response Time"].append(resptime)
+        # Collect response time, % correct
+        if row[0] == 'Math Trial End':
+            if not "en" in globals():
+                
+                en = 0
+            if en == 0:
+                en = 1
+                if row[2].upper() == "TRUE":
+                    resps[exp]["Accuracy"].append(True)
+                elif row[2].upper() == "FALSE":
+                    resps[exp]["Accuracy"].append(False)
+                else:
+                    return 1/0
+            elif en == 1:
+                en = 0
+            
+        pass
+    if exp == "Easy Math Task":
+        if row[0] == 'Choice presented':
+            prevtime = float(row[1])
+        elif row[0] == 'Choice made':
+            resptime = float(row[1]) - prevtime  
+            resps[exp]["Response Time"].append(resptime)
+        # Collect response time, % correct
+        if row[0] == 'Math Trial End':
+            if not "en" in globals():
+                # global en
+                en = 0
+            if en == 0:
+                en = 1
+                if row[2].upper() == "TRUE":
+                    resps[exp]["Accuracy"].append(True)
+                elif row[2].upper() == "FALSE":
+                    resps[exp]["Accuracy"].append(False)
+                else:
+                    return 1/0
+            elif en == 1:
+                en = 0
+        # Collect response time, % correct
+        pass
+    if exp == "Friend Task": #NO RESPONSE TIMES
+        print(row)
+        if row[0].split('_')[0] == 'Start':
+            prevtime = float(row[1])
+        elif row[0].split('_')[0] == 'End':
+            resptime = float(row[1]) - prevtime  
+            resps[exp]["Response Time"].append(resptime)
+        # Collect response time, sentiment
+        if row[0].split('_')[0] == 'End':
+            sentdirection = sentimentdict[row[0].split('_')[2]]
+            
+            if row[8] == 'right':
+                applies = True
+            if row[8] == 'left':
+                applies = False
+            if row[8] == "None":
+                #resps[exp]["Sentiment"].append("noresponse")
+                return  
+            if sentdirection == 'Negative':
+                if applies == True:
+                    resps[exp]["Sentiment"].append(False)      
+                elif applies == False:
+                    resps[exp]["Sentiment"].append(True)  
+                
+            if sentdirection == 'Positive':
+                if applies == True:
+                    resps[exp]["Sentiment"].append(True)      
+                elif applies == False:
+                    resps[exp]["Sentiment"].append(False)  
+                        
+            
+            
+        pass
+    if exp == "You Task":
+        if row[0].split('_')[0] == 'Start':
+            prevtime = float(row[1])
+        elif row[0].split('_')[0] == 'End':
+            resptime = float(row[1]) - prevtime  
+            resps[exp]["Response Time"].append(resptime)
+        # Collect response time, sentiment
+        if row[0].split('_')[0] == 'End':
+            sentdirection = sentimentdict[row[0].split('_')[2]]
+            
+            if row[8] == 'right':
+                applies = True
+            if row[8] == 'left':
+                applies = False
+            if row[8] == "None":
+                #resps[exp]["Sentiment"].append("noresponse")
+                return  
+            if sentdirection == 'Negative':
+                if applies == True:
+                    resps[exp]["Sentiment"].append(False)      
+                elif applies == False:
+                    resps[exp]["Sentiment"].append(True)  
+                
+            if sentdirection == 'Positive':
+                if applies == True:
+                    resps[exp]["Sentiment"].append(True)      
+                elif applies == False:
+                    resps[exp]["Sentiment"].append(False)  
+        # Collect response time, sentiment
+        pass
+    
+        #print("e")    
+    pass
 for file in os.listdir("Tasks/log_file"):
     
     ftemp = file.split('.')[0]
-    
+    resps = {"Experience Sampling Questions":{"Response Time":[]},
+             "GoNoGo Task":{"Response Time":[], "Accuracy":[]},
+             "Finger Tapping Task":{"Response Time":[], "Accuracy":[]},
+             "One-Back Task":{"Response Time":[], "Accuracy":[]},
+             "Zero-Back Task":{"Response Time":[], "Accuracy":[]},
+             "Hard Math Task":{"Response Time":[], "Accuracy":[]},
+             "Easy Math Task":{"Response Time":[], "Accuracy":[]},
+             "Friend Task":{"Response Time":[], "Sentiment":[]},
+             "You Task":{"Response Time":[], "Sentiment":[]}
+             }
     if not 'full' in ftemp.split('_'):
         line_dict= {"Task_name":None,
         "Participant #":None,
@@ -63,6 +314,7 @@ for file in os.listdir("Tasks/log_file"):
         }
         _,_,subject,seed = ftemp.split("_")
         line_dict["Participant #"] = subject
+        
         with open(os.path.join("Tasks/log_file",file)) as f:
             reader = csv.reader(f)
             
@@ -88,9 +340,54 @@ for file in os.listdir("Tasks/log_file"):
                         task_name = row[10]
                         line_dict[row[3]]=row[4]
                         line_dict["Task_name"] = task_name
-                    print(row)
+                    #print(row)
                 else:
                     ect = 0
                     enum =0
                 
         print(file)
+    else:
+        stats = {}
+        expdict = {}
+        captsubj = False
+        ready = False
+        resps.update({"Subject":subject})
+        with open(os.path.join("Tasks/log_file",file)) as f:
+            reader = csv.reader(f)
+            
+            for row in reader:
+                
+                # Subject name
+                if captsubj == True:
+                    stats.update({"Subject":row[2]})
+                    captsubj = False
+                if row[0] == "Block Runtime":
+                    if row[2] == "Subject":
+                        captsubj = True
+                        
+                # Experiment name
+                elif row[0] == "EXPERIMENT DATA:":
+                    expdict = {}
+                    expdict.update({"Experiment":row[1]})
+                    ready = False
+                
+                # Trigger start on next line
+                elif row[0] == "Start Time":
+                    ready = True
+                elif ready == True:
+                    sortingfunction(expdict["Experiment"],row,resps)  
+                    
+                print(row)
+        with open("Analysis/accuracy.csv","a",newline="") as f:
+            newdict = {"Subject":resps['Subject'],"Experience Sampling Questions Response Time":np.mean(resps['Experience Sampling Questions']['Response Time']),
+             "GoNoGo Task Response Time":np.mean(resps['GoNoGo Task']['Response Time']), "GoNoGo Task Accuracy":(resps['GoNoGo Task']['Accuracy'].count(True)/len(resps['GoNoGo Task']['Accuracy'])),
+             "Finger Tapping Task Response Time":"Nan", "Finger Tapping Task Accuracy":(resps['Finger Tapping Task']['Accuracy'].count(True)/len(resps['Finger Tapping Task']['Accuracy'])),
+             "One-Back Task Response Time":np.mean(resps['One-Back Task']['Response Time']), "One-Back Task Accuracy":(resps['One-Back Task']['Accuracy'].count(True)/len(resps['One-Back Task']['Accuracy'])),
+             "Zero-Back Task Response Time":np.mean(resps['Zero-Back Task']['Response Time']), "Zero-Back Task Accuracy":(resps['Zero-Back Task']['Accuracy'].count(True)/len(resps['Zero-Back Task']['Accuracy'])),
+             "Hard Math Task Response Time":np.mean(resps['Hard Math Task']['Response Time']), "Hard Math Task Accuracy":(resps['Hard Math Task']['Accuracy'].count(True)/len(resps['Hard Math Task']['Accuracy'])),
+             "Easy Math Task Response Time":np.mean(resps['Easy Math Task']['Response Time']), "Easy Math Task Accuracy":(resps['Easy Math Task']['Accuracy'].count(True)/len(resps['Easy Math Task']['Accuracy'])),
+             "Friend Task Response Time":"Nan", "Friend Task Sentiment":(resps['Friend Task']['Sentiment'].count(True)/len(resps['Friend Task']['Sentiment'])),
+             "You Task Response Time":"Nan", "You Task Sentiment":(resps['You Task']['Sentiment'].count(True)/len(resps['You Task']['Sentiment']))
+             }
+            writer = csv.writer(f)
+            writer.writerow(newdict.values())

@@ -1,0 +1,57 @@
+pygame 2.1.2 (SDL 2.0.18, Python 3.6.13)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Now initializing Friend Task
+Now setting up Friend Task
+Now running Friend Task
+Now starting ESQ for Friend Task
+Now initializing Friend Task
+Now setting up Friend Task
+Now running Friend Task
+Now starting ESQ for Friend Task
+Now initializing You Task
+Now setting up You Task
+Now running You Task
+Now starting ESQ for You Task
+Now initializing You Task
+Now setting up You Task
+Now running You Task
+Now starting ESQ for You Task
+Now initializing Movie Task
+Now setting up Movie Task
+Now running Movie Task
+Now starting ESQ for Movie Task
+Now initializing Movie Task
+Now setting up Movie Task
+Now running Movie Task
+Now starting ESQ for Movie Task
+Now initializing Finger Tapping Task
+Now setting up Finger Tapping Task
+Now running Finger Tapping Task
+1.8872 	WARNING 	Speech-to-text recognition module not available (use command `pip install SpeechRecognition` to get it. Transcription will be unavailable.
+1.9154 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+29.8463 	WARNING 	Monitor specification not found. Creating a temporary one...
+29.8521 	WARNING 	User requested fullscreen with size [1440  960], but screen is actually [1920, 1080]. Using actual size
+198.0902 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+423.8155 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+619.4590 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+808.7862 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+928.5166 	WARNING 	0.19191876705735922: Video catchup needed, advancing self._nextFrameT from 0.0 to 0.03333333333333333
+928.5166 	WARNING 	0.19195046741515398: Video catchup needed, advancing self._nextFrameT from 0.03333333333333333 to 0.06666666666666667
+928.5166 	WARNING 	0.19196456670761108: Video catchup needed, advancing self._nextFrameT from 0.06666666666666667 to 0.1
+928.5166 	WARNING 	0.19197606667876244: Video catchup needed, advancing self._nextFrameT from 0.1 to 0.13333333333333333
+933.2249 	WARNING 	4.90019606705755: Video catchup needed, advancing self._nextFrameT from 4.833333333333326 to 4.866666666666659
+933.4012 	WARNING 	5.076502366922796: Video catchup needed, advancing self._nextFrameT from 4.899999999999992 to 4.933333333333326
+933.4012 	WARNING 	5.076539066620171: Video catchup needed, advancing self._nextFrameT from 4.933333333333326 to 4.966666666666659
+933.4012 	WARNING 	5.076553867198527: Video catchup needed, advancing self._nextFrameT from 4.966666666666659 to 4.999999999999992
+933.4012 	WARNING 	5.076567366719246: Video catchup needed, advancing self._nextFrameT from 4.999999999999992 to 5.033333333333325
+933.4936 	WARNING 	5.168937266804278: Video catchup needed, advancing self._nextFrameT from 5.099999999999992 to 5.133333333333325
+933.4937 	WARNING 	Max reportNDroppedFrames reached, will not log any more dropped frames
+1074.5621 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1313.1897 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1403.1606 	WARNING 	ExperimentHandler created with no dataFileName parameter. No data will be saved in the event of a crash
+Now starting ESQ for Finger Tapping Task
+Now initializing Finger Tapping Task
+Now setting up Finger Tapping Task
+Now running Finger Tapping Task
+1515.0129 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1595.3544 	WARNING 	ExperimentHandler created with no dataFileName parameter. No data will be saved in the event of a crash

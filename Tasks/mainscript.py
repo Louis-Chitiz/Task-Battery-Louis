@@ -1,10 +1,12 @@
 
 # Main script written by Ian Goodall-Halliwell. Subscripts are individually credited. Many have been extensively modified, for better or for worse (probably for worse o__o ).
 
+
 from psychopy import core, visual, gui, event
 import psychopy
 import time
 import csv
+import pickle as pkl
 #from Tasks.taskScripts import memoryTask
 import taskScripts
 import os
@@ -65,7 +67,7 @@ class taskbattery(metadatacollection):
                 taskbattery.ESQtask = ESQtask
                 self.INFO = INFO
                 self.taskexeclist = []
-                self.win = visual.Window(size=(1440, 960),color='white', winType='pyglet',fullscr=True)
+                self.win = visual.Window(size=(1440, 960),color='white', winType='pyglet',fullscr=False)
                 self.text = text_2 = visual.TextStim(win=self.win, name='text_2',
                         text='Welcome to our experiment. \n Please follow the instructions on-screen and notify the attending researcher if anything is unclear \n We are thankful for your participation. \n Press <return/enter> to continue.',
                         font='Arial',
@@ -113,6 +115,7 @@ class task(taskbattery,metadatacollection):
                 self.esq = esq
                 self.ver = ver
                 self.dfile = dfile
+                #super.__init__()
         
         def initvers(self):
                 os.chdir(os.getcwd())
@@ -172,7 +175,49 @@ class task(taskbattery,metadatacollection):
                                         file_writer.writerow(subthing)
                 self._ver_a_name = os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(0) + ".csv")
                 self._ver_b_name = os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(1) + ".csv")
+        def setver3(self):
+                ###
+                ###   ###   NEED TO LOAD THE FILES FROM CSV AND PRESERVE THE HEADERS, THEN PUT THE OLD HEADERS INTO THE NEW BLOCK CSVs
+                ###
+                self.ver_a = random.sample(self.l, round(len(self.l)/3) )
+                b = self.l
+                for val in self.ver_a:
+                        b[:] = [x for x in b if x != val]
+                random.shuffle(b)
                 
+                self.ver_b = random.sample(b, round(len(b)/2) )
+                c = b
+                for val in self.ver_a:
+                        c[:] = [x for x in c if x != val]
+                random.shuffle(c)
+                
+                
+                c.insert(0,*[self.headers])
+                self.ver_c = c
+                
+                random.shuffle(self.ver_a)
+                random.shuffle(self.ver_b)
+                
+                self.ver_a.insert(0, self.headers)
+                self.ver_b.insert(0, self.headers)
+                
+                lis = [self.ver_a,self.ver_b,self.ver_c]
+                for enum, thing in enumerate(lis):
+                        
+                        if not os.path.exists(os.getcwd()+ '//tmp'):
+                                os.mkdir(os.getcwd()+ '//tmp')
+                        if not os.path.exists(os.getcwd()+ '//tmp//%s' %(self.name)):
+                                os.mkdir(os.getcwd() + '//tmp//%s' %(self.name))
+                        if os.path.exists(os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(enum) + ".csv")):
+                                os.remove(os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(enum) + ".csv"))
+                        with open(os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(enum) + ".csv"), mode='w', newline="") as file:
+                                
+                                file_writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+                                for subthing in thing:
+                                        file_writer.writerow(subthing)
+                self._ver_a_name = os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(0) + ".csv")
+                self._ver_b_name = os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(1) + ".csv")   
+                self._ver_c_name = os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(2) + ".csv")        
                                 
                                 
         def run(self):
@@ -197,13 +242,23 @@ class task(taskbattery,metadatacollection):
                                 self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, writer, taskbattery.resultdict, self.runtime, self._ver_b_name, int(metacoll.INFO['Experiment Seed']))
                         if self.ver == 2:
                                 self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, writer, taskbattery.resultdict, self.runtime, self._ver_b_name, int(metacoll.INFO['Experiment Seed']))
+                        if self.ver == 3:
+                                self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, writer, taskbattery.resultdict, self.runtime, self._ver_c_name, int(metacoll.INFO['Experiment Seed']))
+                
                 if self.esq == True:
+                        try:
+                                a = taskbattery.prevname
+                        except:
+                                taskbattery.prevname = "Movie Task"
                         taskbattery.resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : self.name, 'Task Iteration': '1', 'Participant ID': self.trialclass[1], 'Response_Key' : None, 'Auxillary Data': None, 'Assoc Task':taskbattery.prevname}
                         self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, None, int(metacoll.INFO['Experiment Seed']))
                 f.close()
                 fr.close()
                 taskbattery.resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : None, 'Task Iteration': None, 'Participant ID': None,'Response_Key':None, 'Auxillary Data': None, 'Assoc Task':None}
                 taskbattery.prevname = self.name
+
+
+
 class taskgroup(taskbattery,metadatacollection):
         def __init__(self,tasks,instrpath):
                 self.tasks = tasks
@@ -230,14 +285,14 @@ class taskgroup(taskbattery,metadatacollection):
                 taskbattery.win.flip()
                 time.sleep(1)
                 event.waitKeys(keyList=['return'])
-                # taskbattery.win.flip()
+                
         def run(self):
                 for taskgrp in self.tasks:
                         for task in taskgrp:
                                 print("Now initializing {}".format(task.name))
                                 task.initvers()
                                 print("Now setting up {}".format(task.name))
-                                task.setver()
+                                task.setver3()
                                 print("Now running {}".format(task.name))
                                 task.run()
                                 print("Now starting ESQ for {}".format(task.name))
@@ -263,95 +318,118 @@ class taskgroup(taskbattery,metadatacollection):
         
         
 
+### HAVE TO EXPOSE ESQ TASK TO MOVIE SCRIPT
 
-
-
-# Info Dict
-
-INFO = {
-                'Experiment Seed': random.randint(1, 9999999),  
-                'Subject': 'Enter Name Here', 
-                'Block Runtime': 90
-                }
-
-
-
-
-
-
-# Main and backup data file
-
-
-# Run the GUI and save output to logfile
-metacoll = metadatacollection(INFO)
-metacoll.rungui()
-metacoll.collect_metadata()
-
-
-datafile = str(os.getcwd() + '/log_file/output_log_{}_{}.csv'.format(metacoll.INFO['Subject'],metacoll.INFO['Experiment Seed']))
-datafileBackup = 'log_file/testfullbackup.csv'
-
-
-# Defining each task as a task object
-ESQTask = task(taskScripts.ESQ, datafile, datafileBackup, "Experience Sampling Questions", metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv',1, esq=True)
-friendTask = task(taskScripts.otherTask, datafile, datafileBackup, "Friend Task", metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Other_Task/Other_Stimuli.csv', 1)
-youTask = task(taskScripts.selfTask, datafile, datafileBackup, "You Task", metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Self_Task/Self_Stimuli.csv', 1)
-gonogoTask = task(taskScripts.gonogoTask, datafile, datafileBackup, "GoNoGo Task", metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 1)
-fingertapTask = task(taskScripts.fingertappingTask, datafile, datafileBackup, "Finger Tapping Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 1)
-readingTask = task(taskScripts.readingTask, datafile, datafileBackup, "Reading Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Reading_Task/sem_stim_run.csv", 1)
-memTask = task(taskScripts.memoryTask, datafile, datafileBackup,"Memory Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Memory_Task/Memory_prompts.csv', 1)
-zerobackTask = task(taskScripts.zerobackTask, datafile, datafileBackup,"Zero-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_zeroback.csv', 1)
-onebackTask = task(taskScripts.onebackTask, datafile, datafileBackup,"One-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_oneback.csv', 1)
-easymathTask1 = task(taskScripts.easymathTask, datafile, datafileBackup,"Easy Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli1.csv", 1)
-hardmathTask1 = task(taskScripts.hardmathTask, datafile, datafileBackup,"Hard Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli2.csv", 1)
-movieTask1 = task(taskScripts.movieTask, datafile, 1,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 1)
-
-#Block 2
-
-friendTask2 = task(taskScripts.otherTask, datafile, datafileBackup, "Friend Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Other_Task/Other_Stimuli.csv', 2)
-youTask2 = task(taskScripts.selfTask, datafile, datafileBackup, "You Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Self_Task/Self_Stimuli.csv', 2)
-gonogoTask2 = task(taskScripts.gonogoTask, datafile, datafileBackup, "GoNoGo Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 2)
-fingertapTask2 = task(taskScripts.fingertappingTask, datafile, datafileBackup, "Finger Tapping Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 2)
-readingTask2 = task(taskScripts.readingTask, datafile, datafileBackup, "Reading Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Reading_Task/sem_stim_run.csv", 2)
-memTask2 = task(taskScripts.memoryTask, datafile, datafileBackup,"Memory Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Memory_Task/Memory_prompts.csv', 2)
-zerobackTask2 = task(taskScripts.zerobackTask, datafile, datafileBackup,"Zero-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_zeroback.csv', 2)
-onebackTask2 = task(taskScripts.onebackTask, datafile, datafileBackup,"One-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_oneback.csv', 2)
-easymathTask2 = task(taskScripts.easymathTask, datafile, datafileBackup,"Easy Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli1.csv", 2)
-hardmathTask2 = task(taskScripts.hardmathTask, datafile, datafileBackup,"Hard Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli2.csv", 2)
-movieTask2 = task(taskScripts.movieTask, datafile, 2,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 2)
-
-self_other = taskgroup([[friendTask,friendTask2],[youTask,youTask2]],"resources/group_inst/self_other.txt" )
-gonogo_fingtap = taskgroup([[gonogoTask,gonogoTask2],[fingertapTask,fingertapTask2]],"resources/group_inst/gonogo_fingtap.txt")
-reading_memory = taskgroup([[readingTask,readingTask2],[memTask,memTask2]],"resources/group_inst/reading_memory.txt")
-oneback_zeroback = taskgroup([[zerobackTask,zerobackTask2],[onebackTask,onebackTask2]],"resources/group_inst/oneback_zeroback.txt")
-ezmath_hrdmath = taskgroup([[easymathTask1,easymathTask2],[hardmathTask1,hardmathTask2]],"resources/group_inst/ezmath_hrdmath.txt")
-movie_main = taskgroup([[movieTask1,movieTask2]],"resources/group_inst/movie_main.txt")
-reading_memory1 = taskgroup([[memTask,memTask2]],"resources/group_inst/reading_memory.txt")
-
-
-fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main]
-#fulltasklist = [gonogo_fingtap]
-#fulltasklist = [reading_memory1]
-
-
-for enum, blk in enumerate(fulltasklist):
-        blk.shuffle()
-
-random.shuffle(fulltasklist)
-tasks = fulltasklist
-
-#tasks = [readingTask2]
-
-# Example of task battery using 0-back and 1-back tasks:
-
-
-
-# ADD AN INITIAL SCREEN DESCRIBING THE EXPERIMENT
-# ADD DESCRIPTION FOR WHAT LEFT AND RIGHT DOES FOR THE SELF/OTHER TASK
-
-
-
-tbt = taskbattery(tasks, ESQTask, INFO)
 if __name__ == "__main__":
-       tbt.run_battery()
-       print("Success")
+        
+
+        # Info Dict
+        INFO = {
+                        'Experiment Seed': random.randint(1, 9999999),  
+                        'Subject': 'Enter Name Here', 
+                        'Block Runtime': 15
+                        }
+
+
+
+        # Main and backup data file
+
+
+        # Run the GUI and save output to logfile
+        metacoll = metadatacollection(INFO)
+        metacoll.rungui()
+        metacoll.collect_metadata()
+        
+        # Defining output datafile
+        datafile = str(os.getcwd() + '/log_file/output_log_{}_{}.csv'.format(metacoll.INFO['Subject'],metacoll.INFO['Experiment Seed']))
+        datafileBackup = 'log_file/testfullbackup.csv'
+        if os.path.exists("tmp/esqtmp.pkl"):
+                os.remove("tmp/esqtmp.pkl")
+        with open("tmp/esqtmp.pkl",'wb') as frrr:
+                pkl.dump([datafile,datafileBackup,metacoll.sbINFO.data,int(metacoll.INFO['Block Runtime'])],frrr)
+        ESQTask = task(taskScripts.ESQ, datafile, datafileBackup, "Experience Sampling Questions", metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv',1, esq=True)
+        
+        # Defining each task as a task object
+        
+        
+        friendTask = task(taskScripts.otherTask, datafile, datafileBackup, "Friend Task", metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Other_Task/Other_Stimuli.csv', 1)
+        youTask = task(taskScripts.selfTask, datafile, datafileBackup, "You Task", metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Self_Task/Self_Stimuli.csv', 1)
+        gonogoTask = task(taskScripts.gonogoTask, datafile, datafileBackup, "GoNoGo Task", metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 1)
+        fingertapTask = task(taskScripts.fingertappingTask, datafile, datafileBackup, "Finger Tapping Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 1)
+        readingTask = task(taskScripts.readingTask, datafile, datafileBackup, "Reading Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Reading_Task/sem_stim_run.csv", 1)
+        memTask = task(taskScripts.memoryTask, datafile, datafileBackup,"Memory Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Memory_Task/Memory_prompts.csv', 1)
+        zerobackTask = task(taskScripts.zerobackTask, datafile, datafileBackup,"Zero-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_zeroback.csv', 1)
+        onebackTask = task(taskScripts.onebackTask, datafile, datafileBackup,"One-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_oneback.csv', 1)
+        easymathTask1 = task(taskScripts.easymathTask, datafile, datafileBackup,"Easy Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli1.csv", 1)
+        hardmathTask1 = task(taskScripts.hardmathTask, datafile, datafileBackup,"Hard Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli2.csv", 1)
+        
+
+        #Block 2
+
+        friendTask2 = task(taskScripts.otherTask, datafile, datafileBackup, "Friend Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Other_Task/Other_Stimuli.csv', 2)
+        youTask2 = task(taskScripts.selfTask, datafile, datafileBackup, "You Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Self_Task/Self_Stimuli.csv', 2)
+        gonogoTask2 = task(taskScripts.gonogoTask, datafile, datafileBackup, "GoNoGo Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 2)
+        fingertapTask2 = task(taskScripts.fingertappingTask, datafile, datafileBackup, "Finger Tapping Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 2)
+        readingTask2 = task(taskScripts.readingTask, datafile, datafileBackup, "Reading Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Reading_Task/sem_stim_run.csv", 2)
+        memTask2 = task(taskScripts.memoryTask, datafile, datafileBackup,"Memory Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Memory_Task/Memory_prompts.csv', 2)
+        zerobackTask2 = task(taskScripts.zerobackTask, datafile, datafileBackup,"Zero-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_zeroback.csv', 2)
+        onebackTask2 = task(taskScripts.onebackTask, datafile, datafileBackup,"One-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_oneback.csv', 2)
+        easymathTask2 = task(taskScripts.easymathTask, datafile, datafileBackup,"Easy Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli1.csv", 2)
+        hardmathTask2 = task(taskScripts.hardmathTask, datafile, datafileBackup,"Hard Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli2.csv", 2)
+        
+
+        #Block 3 
+        friendTask3 = task(taskScripts.otherTask, datafile, datafileBackup, "Friend Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Other_Task/Other_Stimuli.csv', 3)
+        youTask3 = task(taskScripts.selfTask, datafile, datafileBackup, "You Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Self_Task/Self_Stimuli.csv', 3)
+        gonogoTask3 = task(taskScripts.gonogoTask, datafile, datafileBackup, "GoNoGo Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 3)
+        fingertapTask3 = task(taskScripts.fingertappingTask, datafile, datafileBackup, "Finger Tapping Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 3)
+        readingTask3 = task(taskScripts.readingTask, datafile, datafileBackup, "Reading Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Reading_Task/sem_stim_run.csv", 3)
+        memTask3 = task(taskScripts.memoryTask, datafile, datafileBackup,"Memory Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/Memory_Task/Memory_prompts.csv', 3)
+        zerobackTask3 = task(taskScripts.zerobackTask, datafile, datafileBackup,"Zero-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_zeroback.csv', 3)
+        onebackTask3 = task(taskScripts.onebackTask, datafile, datafileBackup,"One-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_oneback.csv', 3)
+        easymathTask3 = task(taskScripts.easymathTask, datafile, datafileBackup,"Easy Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli1.csv", 3)
+        hardmathTask3 = task(taskScripts.hardmathTask, datafile, datafileBackup,"Hard Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli2.csv", 3)
+        
+
+        # Defining task GROUPS (groups will always be shown together, preceded by an instruction screen)
+        
+        self_other = taskgroup([[friendTask,friendTask2,friendTask3],[youTask,youTask2,youTask3]],"resources/group_inst/self_other.txt" )
+        gonogo_fingtap = taskgroup([[gonogoTask,gonogoTask2,gonogoTask3],[fingertapTask,fingertapTask2,fingertapTask3]],"resources/group_inst/gonogo_fingtap.txt")
+        reading_memory = taskgroup([[readingTask,readingTask2,readingTask3],[memTask,memTask2,memTask3]],"resources/group_inst/reading_memory.txt")
+        oneback_zeroback = taskgroup([[zerobackTask,zerobackTask2,zerobackTask3],[onebackTask,onebackTask2,onebackTask3]],"resources/group_inst/oneback_zeroback.txt")
+        ezmath_hrdmath = taskgroup([[easymathTask1,easymathTask2,easymathTask3],[hardmathTask1,hardmathTask2,hardmathTask3]],"resources/group_inst/ezmath_hrdmath.txt")
+        
+        
+        
+        self_other = taskgroup([[friendTask3],[youTask3]],"resources/group_inst/self_other.txt" )
+        gonogo_fingtap = taskgroup([[gonogoTask3],[fingertapTask3]],"resources/group_inst/gonogo_fingtap.txt")
+        reading_memory = taskgroup([[readingTask3],[memTask3]],"resources/group_inst/reading_memory.txt")
+        oneback_zeroback = taskgroup([[zerobackTask3],[onebackTask3]],"resources/group_inst/oneback_zeroback.txt")
+        ezmath_hrdmath = taskgroup([[easymathTask3],[hardmathTask3]],"resources/group_inst/ezmath_hrdmath.txt")
+        
+        
+        movieTask1 = task(taskScripts.movieTask, datafile, 1,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 1)
+        movieTask2 = task(taskScripts.movieTask, datafile, 2,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 2)
+        movieTask3 = task(taskScripts.movieTask, datafile, 3,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 3)
+        movieTask4 = task(taskScripts.movieTask, datafile, 4,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 4)
+        movie_main = taskgroup([[movieTask1,movieTask2,movieTask3,movieTask4]],"resources/group_inst/movie_main.txt")
+        
+
+
+
+
+        fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main]
+        #fulltasklist = [movie_main]
+        
+        # Shuffles the order of the tasks in taskgroups
+        for enum, blk in enumerate(fulltasklist):
+                blk.shuffle()
+        
+        # Shuffle the order of the taskgroups
+        random.shuffle(fulltasklist)
+        tasks = fulltasklist
+
+        tbt = taskbattery(tasks, ESQTask, INFO)
+        
+        tbt.run_battery()
+        print("Success")

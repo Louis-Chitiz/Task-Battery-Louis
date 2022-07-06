@@ -2033,7 +2033,11 @@ def runexp(logfile, expClock, win, writer, resultdict, runtime,dfile,seed):
                 c = c - 1
                 finallist.append(bm)
             if c == 0:
-                tmper = zbacklis[cvt]
+                #old version
+                #tmper = zbacklis[cvt]
+                #NEW VERSION:
+                tmper = zbacklis[cvt].copy()
+                #del tmper['TrialIndex']
                 if tmper["Ans"] == "right":
                     tmper['stimPicMid'] = finallist[-1]["stimPicRight"]
                 if tmper["Ans"] == "left":
@@ -2044,6 +2048,14 @@ def runexp(logfile, expClock, win, writer, resultdict, runtime,dfile,seed):
                 # if cvt == 6:
                 #     cvt = 0
         Experiment.trials = finallist  
+        debugmode = True
+        if debugmode == True:
+            
+            with open("C:/Users/Ian/Documents/GitHub/THINCLabTestRepo/Analysis/oneback.csv","a",newline="") as frdt:
+                writerd = csv.writer(frdt)
+                for row in finallist:
+                    writerd.writerow(row.values())
+                
         if experiment_info['Environment'] is 'mri':
             # wait trigger
             instructions.waitTrigger(trigger_code)
@@ -2081,9 +2093,10 @@ def runexp(logfile, expClock, win, writer, resultdict, runtime,dfile,seed):
                     resultdict['Timepoint'], resultdict['Time'], resultdict['Auxillary Data'] = None,None, None
                     stim_t, KeyResp, Resp, KeyPressTime, respRT, correct = stim.show(timer)
                     iscorrect = []
+                    #a = trial['Ans']
                     if trial['Ans'] == KeyResp:
                         iscorrect = True
-                    if trial['Ans'] == 'NA' and KeyResp == 'None':
+                    elif trial['Ans'] == 'NA' and KeyResp == 'None':
                         iscorrect = True
                     else:
                         iscorrect = False

@@ -245,8 +245,8 @@ def runexp(filename, timer, win, writers, resdict, runtime,dfile,seed):
     
 
     #       get each question from Questionnaire:
-    for enum, i in enumerate(range(0,len(ES_fixed.trialList))):
-        
+    # for enum, i in enumerate(range(0,len(ES_fixed.trialList))):
+    for enum, i in enumerate(range(0,1)):     #Shortened
         #if i < len(ES_fixed.trialList):
         if i < len(ES_fixed.trialList):
             question = ES_fixed.next()
