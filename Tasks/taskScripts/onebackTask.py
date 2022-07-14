@@ -2048,7 +2048,7 @@ def runexp(logfile, expClock, win, writer, resultdict, runtime,dfile,seed):
                 # if cvt == 6:
                 #     cvt = 0
         Experiment.trials = finallist  
-        debugmode = True
+        debugmode = False
         if debugmode == True:
             
             with open("C:/Users/Ian/Documents/GitHub/THINCLabTestRepo/Analysis/oneback.csv","a",newline="") as frdt:
