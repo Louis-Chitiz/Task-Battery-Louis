@@ -12,8 +12,8 @@ import codecs
 import re
 
 #Change this to the path where you store the stimuli folders for the 2-back
-PATH = "/taskScripts/resources/2back_Task/blocks/"
-STIMPATH = "/taskScripts/resources/2back_Task/WM Stimuli/"
+PATH = "/taskScripts/resources/TwoBack_Task/blocks/"
+STIMPATH = "/taskScripts/resources/TwoBack_Task/WM Stimuli/"
 BLOCKS = ['faces_A', 'faces_B', 'scenes_A', 'scenes_B']
 
 def runexp1(timer, win, writer, resultdict, data, runtime):
@@ -255,11 +255,11 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
         depth=0.0);
     # show the instruction
     # instruct(curr_dic,instruct_figure)
-    with open(os.path.join(os.getcwd(),"/taskScripts/resources/2back_Task/instr1.txt")) as f:
+    with open(os.path.join(os.getcwd(),"/taskScripts/resources/TwoBack_Task/instr1.txt")) as f:
         lines1 = f.read()
-    with open(os.path.join(os.getcwd(),"/taskScripts/resources/2back_Task/instr2.txt")) as f:
+    with open(os.path.join(os.getcwd(),"/taskScripts/resources/TwoBack_Task/instr2.txt")) as f:
         lines2 = f.read()
-    with open(os.path.join(os.getcwd(),"/taskScripts/resources/2back_Task/instr3.txt")) as f:
+    with open(os.path.join(os.getcwd(),"/taskScripts/resources/TwoBack_Task/instr3.txt")) as f:
         lines3 = f.read()
         
         for i, cur in enumerate([lines1,lines2,lines3]):

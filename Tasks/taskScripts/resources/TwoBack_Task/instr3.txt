@@ -1,0 +1,5 @@
+For example, if the images were of letters, suppose you were presented an image of the letter 'K'.
+If the order of the images leading up to it were as follows: 'L'	''K''	 'M'	Current image: ''K''
+then you would press the right arrow key, since the letter 'K' was also presented two images before the current 'K'.
+If the order of the images were: ['L', 'M', ''K'', ''K''] or [''K'', 'L', 'M', ''K''] or ['J', 'L', 'M', ''K'']
+then you would press the left arrow key upon seeing the 'K', since there was no 'K' two images before the current one.
