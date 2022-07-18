@@ -1891,6 +1891,7 @@ def get_stim_screen(trial, switch_screen, stimulus_screen):
 
 
 def runexp(logfile, expClock, win, writer, resultdict, runtime, dfile,seed):
+    writer = writer[0]
     import random
     random.seed(a=seed)
     '''run.py

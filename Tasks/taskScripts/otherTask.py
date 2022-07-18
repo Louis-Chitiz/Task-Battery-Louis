@@ -707,6 +707,7 @@ def run_experiment(timer, win, writer, resdict, runtime, dfiles):
 
 
 def runexp(filename, timer, win, writer, resdict, runtime,dfile,seed):
+    writer = writer[0]
     random.seed(a=seed)
     global instruction_parameter
     global trial_output

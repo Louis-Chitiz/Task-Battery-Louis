@@ -31,6 +31,7 @@ from psychopy.hardware import keyboard
 
 
 def runexp(filename, timer, win, writer, resultdict, runtime,dfile,seed):
+    writer = writer[0]
     import random
     random.seed(a=seed)
     # Ensure that relative paths start from the same directory as this script

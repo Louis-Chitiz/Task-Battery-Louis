@@ -855,6 +855,7 @@ def main(logloc, myClock, myWin, writer, resdict, runtime,dfile):
     
 
 def runexp(logfilelocation, time, myWin, writer,resdict, runtime,dfile,seed):
+    writer = writer[0]
     random.seed(a=seed)
     resdict['Timepoint'],resdict['Time'] = 'gonogo START', time.getTime()
     writer.writerow(resdict)

@@ -36,6 +36,7 @@ from psychopy.hardware import keyboard
 # Experiment constants
 
 def runexp(logfile, expClock, win, writer, resultdict, runtime,dfile,seed):
+    writer = writer[0]
     random.seed(a=seed)
     # Experiment constants
     instruct_file = 'semantic_relation_instru.csv' 

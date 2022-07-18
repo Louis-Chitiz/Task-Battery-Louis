@@ -643,6 +643,7 @@ def runexp1(timer, win, writer, resultdict, data,runtime):
 
 #Creating a set of 8 blocks, 4 easy and 4 hard.
 def runexp(filename, timer, win, writer, resdict, runtime,dfile,seed):
+    writer = writer[0]
     random.seed(a=seed)
     data = block_generator(dfile)
     random.shuffle(data)
