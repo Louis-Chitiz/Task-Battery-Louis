@@ -1,0 +1,17 @@
+METADATA:
+Block Runtime,Experiment Seed,Subject
+15,6560903,Enter Name Here
+Time after setup,1.3286920000027749
+Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+EXPERIMENT DATA:,Two-Back Task
+Start Time,4.766317200002959
+2-back Task Start,1.0836737000026915,,,,Two-Back Task,1,6560903,,,
+fixation cross,1.102515400001721,,,,Two-Back Task,1,6560903,,,
+2-back Trial Start,3.1507590000001073,,,,Two-Back Task,1,6560903,,,
+Choice presented,3.1507969000012963,,,,Two-Back Task,1,6560903,,,
+Choice made,7.162310600000637,,,,Two-Back Task,1,6560903,,,
+2-back Trial End,7.162359199999628,False,,,Two-Back Task,1,6560903,,,
+2-back Trial Start,9.224484600003052,,,,Two-Back Task,1,6560903,,,
+Choice presented,9.224522500000603,,,,Two-Back Task,1,6560903,,,
+Choice made,13.23861290000059,,,,Two-Back Task,1,6560903,,,
+2-back Trial End,13.238665900000342,False,,,Two-Back Task,1,6560903,,,

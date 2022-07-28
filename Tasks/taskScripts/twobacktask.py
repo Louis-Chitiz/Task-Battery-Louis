@@ -43,13 +43,13 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
     monitor_name = 'HP ProOne 600'
 
     # instruction, position height
-    word_pos = (0,0.05)
+    word_pos = (0,0.3)
     text_h   = 120
     # fixa_h     = 200
     instru_pos = (0,0)
     # instru_h =100
-    choice_right_pos =(-0.1,-0.05)
-    choice_left_pos =(0.1,-0.05)
+    choice_right_pos =(-0.5,-0.5)
+    choice_left_pos =(0.5,-0.5)
 
     ### define functions
 
