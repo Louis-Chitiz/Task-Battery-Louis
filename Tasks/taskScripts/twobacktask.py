@@ -1,3 +1,4 @@
+#This file was created by Louis Chitiz with edits from Ian Goodall-Halliwell.
 from psychopy import visual, core, monitors, event, sound, gui, logging
 import os
 import time
@@ -12,6 +13,7 @@ import pandas as pd
 #Change this to the path where you store the stimuli folders for the 2-back
 PATH = "taskScripts/resources/TwoBack_Task/blocks/"
 STIMPATH = "taskScripts/resources/TwoBack_Task/WM Stimuli/"
+#This is a list of pre-generated blocks. See the block_generator scripts for how I created them.
 BLOCKS = ['faces_A', 'faces_B', 'scenes_A', 'scenes_B']
 
 def runexp1(timer, win, writer, resultdict, data, runtime):
@@ -44,10 +46,6 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
 
     # instruction, position height
     word_pos = (0,0.3)
-    text_h   = 120
-    # fixa_h     = 200
-    instru_pos = (0,0)
-    # instru_h =100
     choice_right_pos =(-0.5,-0.5)
     choice_left_pos =(0.5,-0.5)
 
@@ -110,6 +108,7 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
         line_text = visual.TextStim(win, line, color='black', pos=pos, bold=True)
         return line_text
 
+    # prepares the image stimulus for the trial to be displayed
     def prep_image(imgfldr, image, pos, path=STIMPATH):
         #path is the folder containing the stimuli for the task,
         #imagefolder is the folder containing the stimuli from the block,
@@ -165,7 +164,7 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
                 # choice = prep_cont(trial['choice'][0:4],choice_right_pos)
                 # choice_right = prep_cont(trial['choice'][len(trial['choice'])-4::],choice_left_pos)
 
-                # display expression - the start of a new trial
+                # display stimulus and choices - the start of a new trial
                 expression.draw()
                 choice_l.draw()
                 choice_r.draw()
