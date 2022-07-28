@@ -359,7 +359,7 @@ if __name__ == "__main__":
         onebackTask = task(taskScripts.onebackTask, datafile, datafileBackup,"One-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_oneback.csv', 1)
         easymathTask1 = task(taskScripts.easymathTask, datafile, datafileBackup,"Easy Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli1.csv", 1)
         hardmathTask1 = task(taskScripts.hardmathTask, datafile, datafileBackup,"Hard Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli2.csv", 1)
-        
+        twobackTask1 = task(taskScripts.twobacktask, datafile, datafileBackup,"Two-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 1)
 
         #Block 2
 
@@ -373,6 +373,7 @@ if __name__ == "__main__":
         onebackTask2 = task(taskScripts.onebackTask, datafile, datafileBackup,"One-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_oneback.csv', 2)
         easymathTask2 = task(taskScripts.easymathTask, datafile, datafileBackup,"Easy Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli1.csv", 2)
         hardmathTask2 = task(taskScripts.hardmathTask, datafile, datafileBackup,"Hard Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli2.csv", 2)
+        twobackTask2 = task(taskScripts.twobacktask, datafile, datafileBackup,"Two-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 2)
         
 
         #Block 3 
@@ -386,6 +387,7 @@ if __name__ == "__main__":
         onebackTask3 = task(taskScripts.onebackTask, datafile, datafileBackup,"One-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//ZeroBack_Task//ConditionsSpecifications_ES_oneback.csv', 3)
         easymathTask3 = task(taskScripts.easymathTask, datafile, datafileBackup,"Easy Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli1.csv", 3)
         hardmathTask3 = task(taskScripts.hardmathTask, datafile, datafileBackup,"Hard Math Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),"resources/Maths_Task/new_math_stimuli2.csv", 3)
+        twobackTask3 = task(taskScripts.twobacktask, datafile, datafileBackup,"Two-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 3)
         
 
         # Defining task GROUPS (groups will always be shown together, preceded by an instruction screen)
@@ -395,14 +397,14 @@ if __name__ == "__main__":
         reading_memory = taskgroup([[readingTask,readingTask2,readingTask3],[memTask,memTask2,memTask3]],"resources/group_inst/reading_memory.txt")
         oneback_zeroback = taskgroup([[zerobackTask,zerobackTask2,zerobackTask3],[onebackTask,onebackTask2,onebackTask3]],"resources/group_inst/oneback_zeroback.txt")
         ezmath_hrdmath = taskgroup([[easymathTask1,easymathTask2,easymathTask3],[hardmathTask1,hardmathTask2,hardmathTask3]],"resources/group_inst/ezmath_hrdmath.txt")
+        twobackTask_grp = taskgroup([[twobackTask1,twobackTask2,twobackTask3]],"resources/group_inst/ezmath_hrdmath.txt")
         
         
-        
-        self_other = taskgroup([[friendTask3],[youTask3]],"resources/group_inst/self_other.txt" )
-        gonogo_fingtap = taskgroup([[gonogoTask3],[fingertapTask3]],"resources/group_inst/gonogo_fingtap.txt")
-        reading_memory = taskgroup([[readingTask3],[memTask3]],"resources/group_inst/reading_memory.txt")
-        oneback_zeroback = taskgroup([[zerobackTask3],[onebackTask3]],"resources/group_inst/oneback_zeroback.txt")
-        ezmath_hrdmath = taskgroup([[easymathTask3],[hardmathTask3]],"resources/group_inst/ezmath_hrdmath.txt")
+        # self_other = taskgroup([[friendTask3],[youTask3]],"resources/group_inst/self_other.txt" )
+        # gonogo_fingtap = taskgroup([[gonogoTask3],[fingertapTask3]],"resources/group_inst/gonogo_fingtap.txt")
+        # reading_memory = taskgroup([[readingTask3],[memTask3]],"resources/group_inst/reading_memory.txt")
+        # oneback_zeroback = taskgroup([[zerobackTask3],[onebackTask3]],"resources/group_inst/oneback_zeroback.txt")
+        # ezmath_hrdmath = taskgroup([[easymathTask3],[hardmathTask3]],"resources/group_inst/ezmath_hrdmath.txt")
         
         
         movieTask1 = task(taskScripts.movieTask, datafile, 1,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 1)
@@ -416,7 +418,7 @@ if __name__ == "__main__":
 
 
         fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main]
-        fulltasklist = [movie_main]
+        fulltasklist = [twobackTask_grp]
         
         # Shuffles the order of the tasks in taskgroups
         for enum, blk in enumerate(fulltasklist):

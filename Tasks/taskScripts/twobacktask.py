@@ -1,4 +1,3 @@
-# from readline import set_completion_display_matches_hook
 from psychopy import visual, core, monitors, event, sound, gui, logging
 import os
 import time
@@ -8,12 +7,11 @@ import numpy as np
 import random
 from collections import OrderedDict
 import pandas as pd
-import codecs
-import re
+
 
 #Change this to the path where you store the stimuli folders for the 2-back
-PATH = "/taskScripts/resources/TwoBack_Task/blocks/"
-STIMPATH = "/taskScripts/resources/TwoBack_Task/WM Stimuli/"
+PATH = "taskScripts/resources/TwoBack_Task/blocks/"
+STIMPATH = "taskScripts/resources/TwoBack_Task/WM Stimuli/"
 BLOCKS = ['faces_A', 'faces_B', 'scenes_A', 'scenes_B']
 
 def runexp1(timer, win, writer, resultdict, data, runtime):
@@ -163,7 +161,7 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
             if curtime.getTime() < runtime:
                 
                 #''' trial is a ordered dictionary. The key is the first raw of the stimuli csv file'''
-                expression = prep_image(trial['stimtype'],trial['image'],word_pos)
+                expression = prep_image(trial['stimulus type'],trial['image'],word_pos)
                 # choice = prep_cont(trial['choice'][0:4],choice_right_pos)
                 # choice_right = prep_cont(trial['choice'][len(trial['choice'])-4::],choice_left_pos)
 
@@ -255,11 +253,11 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
         depth=0.0);
     # show the instruction
     # instruct(curr_dic,instruct_figure)
-    with open(os.path.join(os.getcwd(),"/taskScripts/resources/TwoBack_Task/instr1.txt")) as f:
+    with open("taskScripts/resources/TwoBack_Task/instr1.txt") as f:
         lines1 = f.read()
-    with open(os.path.join(os.getcwd(),"/taskScripts/resources/TwoBack_Task/instr2.txt")) as f:
+    with open("taskScripts/resources/TwoBack_Task/instr2.txt") as f:
         lines2 = f.read()
-    with open(os.path.join(os.getcwd(),"/taskScripts/resources/TwoBack_Task/instr3.txt")) as f:
+    with open("taskScripts/resources/TwoBack_Task/instr3.txt") as f:
         lines3 = f.read()
         
         for i, cur in enumerate([lines1,lines2,lines3]):
@@ -278,9 +276,11 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
     #end_exp()
     resultdictWriter('2-back Task End',timer,writer)
 
-def runexp(filename, timer, win, writer, resdict, runtime, seed):
+def runexp(filename, timer, win, writer, resdict, runtime,dfile, seed):
+    writer = writer[0]
     random.seed(a=seed)
     blocktype = random.choice(BLOCKS)
+    cwd = os.getcwd()
     block = random.choice(os.listdir(os.path.join(PATH,blocktype)))
     data = os.path.join(PATH, blocktype, block)
     resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : None, 'Task Iteration': None, 'Participant ID': None,'Response_Key':None, 'Auxillary Data': None}
