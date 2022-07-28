@@ -1,4 +1,4 @@
-from readline import set_completion_display_matches_hook
+# from readline import set_completion_display_matches_hook
 from psychopy import visual, core, monitors, event, sound, gui, logging
 import os
 import time
