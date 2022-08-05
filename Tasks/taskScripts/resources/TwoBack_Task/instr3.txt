@@ -1,12 +1,14 @@
-For example, if the images were of letters, 
-suppose you were presented an image of the letter 'K'.
+Just remember, you're
+checking if the current image
+is the same as the one
+2 IMAGES BACK. Like so:
 
-If the order of the images were as follows: 
-'L'	''K''	 'M'  ''K''
-Then you would press the right arrow key, 
-since the letter 'K' was also presented two images before the current 'K'.
+...2-BACK 1-BACK CURRENT
 
-If the order of the images were: 
-['L', 'M', ''K'', ''K''] or [''K'', 'L', 'M', ''K'']
-then you would press the left arrow key upon seeing the 'K', 
-since there was no 'K' two images before the current one.
+LEFT if it's the same
+RIGHT if it's different
+
+Please try to answer
+as quickly as you can!
+
+Good luck!

@@ -1,0 +1,17 @@
+For example, if the 
+images were of letters, 
+suppose you were presented 
+an image of the letter 'K'.
+
+If the order of the images were: 
+['L', ''K'', 'M', ''K''],
+then you would press 
+the RIGHT arrow key, 
+since a 'K' was presented 
+two images before.
+
+If the order was, say: 
+['L', 'M', ''K'', ''K''] or 
+[''K'', 'L', 'M', ''K''], 
+then you would press 
+the LEFT arrow key.
