@@ -46,8 +46,8 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
 
     # instruction, position height
     word_pos = (0,0.3)
-    choice_right_pos =(-0.5,-0.5)
-    choice_left_pos =(0.5,-0.5)
+    choice_left_pos =(-0.5,-0.5)
+    choice_right_pos =(0.5,-0.5)
 
     ### define functions
 
