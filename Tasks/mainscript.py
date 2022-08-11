@@ -2,6 +2,7 @@
 # Main script written by Ian Goodall-Halliwell. Subscripts are individually credited. Many have been extensively modified, for better or for worse (probably for worse o__o ).
 
 
+from numpy import full
 from psychopy import core, visual, gui, event
 import psychopy
 import time
@@ -218,7 +219,7 @@ class task(taskbattery,metadatacollection):
                 self._ver_a_name = os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(0) + ".csv")
                 self._ver_b_name = os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(1) + ".csv")   
                 self._ver_c_name = os.getcwd() + '//tmp//%s' %(self.name + "//" + self.name + "_version_"+ str(2) + ".csv")        
-                                
+                self._ver_d_name = None         
                                 
         def run(self):
                 global prevname
@@ -244,6 +245,8 @@ class task(taskbattery,metadatacollection):
                                 self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_b_name, int(metacoll.INFO['Experiment Seed']))
                         if self.ver == 3:
                                 self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_c_name, int(metacoll.INFO['Experiment Seed']))
+                        if self.ver == 4:
+                                self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_d_name, int(metacoll.INFO['Experiment Seed']))
                 
                 if self.esq == True:
                         
@@ -310,7 +313,11 @@ class taskgroup(taskbattery,metadatacollection):
                 taskbattery.win.flip()
                 
         def shuffle(self):
+                a = self.tasks
+                for a in self.tasks:
+                        random.shuffle(a)
                 random.shuffle(self.tasks)
+                print('')
                         
         
         
@@ -324,7 +331,7 @@ if __name__ == "__main__":
         INFO = {
                         'Experiment Seed': random.randint(1, 9999999),  
                         'Subject': 'Enter Name Here', 
-                        'Block Runtime': 15
+                        'Block Runtime': 75
                         }
 
 
@@ -390,6 +397,11 @@ if __name__ == "__main__":
         twobackTask3 = task(taskScripts.twobacktask, datafile, datafileBackup,"Two-Back Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv', 3)
         
 
+
+        movieTask1 = task(taskScripts.movieTask, datafile, 1,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 1)
+        movieTask2 = task(taskScripts.movieTask, datafile, 2,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 2)
+        movieTask3 = task(taskScripts.movieTask, datafile, 3,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 3)
+        movieTask4 = task(taskScripts.movieTask, datafile, 4,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 4)
         # Defining task GROUPS (groups will always be shown together, preceded by an instruction screen)
         
         self_other = taskgroup([[friendTask,friendTask2,friendTask3],[youTask,youTask2,youTask3]],"resources/group_inst/self_other.txt" )
@@ -398,27 +410,14 @@ if __name__ == "__main__":
         oneback_zeroback = taskgroup([[zerobackTask,zerobackTask2,zerobackTask3],[onebackTask,onebackTask2,onebackTask3]],"resources/group_inst/oneback_zeroback.txt")
         ezmath_hrdmath = taskgroup([[easymathTask1,easymathTask2,easymathTask3],[hardmathTask1,hardmathTask2,hardmathTask3]],"resources/group_inst/ezmath_hrdmath.txt")
         twobackTask_grp = taskgroup([[twobackTask1,twobackTask2,twobackTask3]],"resources/group_inst/ezmath_hrdmath.txt")
-        
-        
-        # self_other = taskgroup([[friendTask3],[youTask3]],"resources/group_inst/self_other.txt" )
-        # gonogo_fingtap = taskgroup([[gonogoTask3],[fingertapTask3]],"resources/group_inst/gonogo_fingtap.txt")
-        # reading_memory = taskgroup([[readingTask3],[memTask3]],"resources/group_inst/reading_memory.txt")
-        # oneback_zeroback = taskgroup([[zerobackTask3],[onebackTask3]],"resources/group_inst/oneback_zeroback.txt")
-        # ezmath_hrdmath = taskgroup([[easymathTask3],[hardmathTask3]],"resources/group_inst/ezmath_hrdmath.txt")
-        
-        
-        movieTask1 = task(taskScripts.movieTask, datafile, 1,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 1)
-        movieTask2 = task(taskScripts.movieTask, datafile, 2,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 2)
-        movieTask3 = task(taskScripts.movieTask, datafile, 3,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 3)
-        movieTask4 = task(taskScripts.movieTask, datafile, 4,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 4)
         movie_main = taskgroup([[movieTask1,movieTask2,movieTask3,movieTask4]],"resources/group_inst/movie_main.txt")
         
+        
+        
 
 
-
-
-        fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main]
-        fulltasklist = [twobackTask_grp]
+        fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main,twobackTask_grp]
+ 
         
         # Shuffles the order of the tasks in taskgroups
         for enum, blk in enumerate(fulltasklist):

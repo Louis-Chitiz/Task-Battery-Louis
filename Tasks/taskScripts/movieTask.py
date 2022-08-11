@@ -80,30 +80,40 @@ def runexp(filename, timer, win, writer, resdict, runtime,dfile,seed):
     
     
     # present film using moviestim
-    resdict['Timepoint'], resdict['Time'] = 'Movie Start', timer.getTime()
+    resdict['Timepoint'], resdict['Time'],resdict['Auxillary Data'] = 'Movie Start', timer.getTime(), list_of_videos[filename-1]
     writer.writerow(resdict)
-    resdict['Timepoint'], resdict['Time'] = None,None
+    resdict['Timepoint'], resdict['Time'],resdict['Auxillary Data'] = None,None,None
     
-    #bruh this shit ain't working wtf
+
      
     mov = visual.MovieStim3(win, trialvideo, size=(1920, 1080), flipVert=False, flipHoriz=False, loop=False)
     expClock = core.Clock()
-    timelimit = 10
+    
+    timelimit = random.randrange(10,int(runtime-10))
+    esqshown = False
+    timelimitpercent = int(100*(timelimit/runtime))
     while mov.status != visual.FINISHED:
-        if expClock.getTime() > timelimit: 
-            mov.pause()
-            ESQ.runexp(None,timer,win,[writer,writera],resdict,None,None,None)
-            mov.play()
-            expClock.reset()
-            timelimit = 10000000
-            #break
+        if expClock.getTime() < runtime:
+            if esqshown == False:
+                if expClock.getTime() > timelimit: 
+                    mov.pause()
+                    timepause = runtime - expClock.getTime() 
+                    ESQ.runexp(None,timer,win,[writer,writera],resdict,None,None,None,movietype="Movie Task".format(list_of_videos[filename-1]))
+                    resdict['Assoc Task'] = None
+                    mov.play()
+                    expClock.reset()
+                    runtime = timepause
+                    esqshown = True
+                    #break
 
-        mov.draw()
-        win.flip()
+            mov.draw()
+            win.flip()
+        else:
+            break
 
     
     
     
-    resdict['Timepoint'], resdict['Time'] = 'Movie End', timer.getTime()
+    resdict['Timepoint'], resdict['Time'],resdict['Auxillary Data'] = 'Movie End {}'.format(list_of_videos[filename-1]), timer.getTime(), timelimitpercent
     writer.writerow(resdict)
-    resdict['Timepoint'], resdict['Time'] = None,None
+    resdict['Timepoint'], resdict['Time'],resdict['Auxillary Data'] = None,None,None

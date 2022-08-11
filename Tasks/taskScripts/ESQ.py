@@ -167,13 +167,14 @@ def get_settings(env, ver):
 
     return settings
 
-def runexp(filename, timer, win, writers, resdict, runtime,dfile,seed):
+def runexp(filename, timer, win, writers, resdict, runtime,dfile,seed,movietype=None):
     random.seed()
     rs = random.randint(0,10000)
     random.seed(a=rs)
     writera = writers[0]
     writerb = writers[1]
-    
+    if movietype != None:
+        resdict['Assoc Task'] = movietype
     instr_path = './taskScripts/resources/ESQ/'  # path for instructions
     instr_name = '_instr.txt' # filename (preceded by subtask name) for instructions
     begin_name = 'begin_instr.txt' # beginning text, if no instruction is needed for second run
@@ -245,8 +246,8 @@ def runexp(filename, timer, win, writers, resdict, runtime,dfile,seed):
     
 
     #       get each question from Questionnaire:
-    # for enum, i in enumerate(range(0,len(ES_fixed.trialList))):
-    for enum, i in enumerate(range(0,1)):     #Shortened
+    for enum, i in enumerate(range(0,len(ES_fixed.trialList))):
+    #for enum, i in enumerate(range(0,1)):     #Shortened
         #if i < len(ES_fixed.trialList):
         if i < len(ES_fixed.trialList):
             question = ES_fixed.next()

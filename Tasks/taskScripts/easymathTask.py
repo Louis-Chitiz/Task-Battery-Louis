@@ -99,7 +99,7 @@ class instructionsc(object):
             event.waitKeys(keyList=['return'])
 
 #Randomly samples a set of 16 trials to create 4 blocks
-def block_generator(dfile, difficulty=1, block_num=4, trial_num=8):
+def block_generator(dfile, difficulty=1, block_num=4, trial_num=6):
     #path = 'taskScripts/resources/Maths_Task/new_math_stimuli' + str(difficulty) + '.csv'
     path = dfile
     stimFile = pd.read_csv(os.path.join(os.path.join(os.getcwd(), ), path))
@@ -649,6 +649,6 @@ def runexp(filename, timer, win, writer, resdict, runtime,dfile,seed):
     random.shuffle(data)
     data = block_remover(data)
     data = new_csv_creator(data)
-    resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : None, 'Task Iteration': None, 'Participant ID': None,'Response_Key':None, 'Auxillary Data': None}
+    #resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : None, 'Task Iteration': None, 'Participant ID': None,'Response_Key':None, 'Auxillary Data': None}
     timer = core.Clock()
     runexp1(timer, win, writer, resdict,  data, runtime)

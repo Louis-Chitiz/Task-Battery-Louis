@@ -588,7 +588,7 @@ def run_experiment(timer, win, writer, resdict, runtime, dfiles):
                     # write response to data file
                     #write_csv(logloc, trial_output_headers, trial_output)
                     resdict['Timepoint'] = str("End_of_" + trial_stim[1])
-                    resdict['Time'] = mytime
+                    resdict['Time'] = timer.getTime()
                     resdict['Response_Key'] = trial_response['resp_key']
                     writer.writerow(resdict) 
                     resdict['Timepoint'], resdict['Time'], resdict["Response_Key"] = None, None, None

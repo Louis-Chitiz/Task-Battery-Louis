@@ -2057,9 +2057,7 @@ def runexp(logfile, expClock, win, writer, resultdict, runtime,dfile,seed):
                 for row in finallist:
                     writerd.writerow(row.values())
                 
-        if experiment_info['Environment'] is 'mri':
-            # wait trigger
-            instructions.waitTrigger(trigger_code)
+        
         # get a global clock
         timer = expClock
 
