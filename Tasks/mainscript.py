@@ -33,12 +33,13 @@ class metadatacollection():
 
         # This writes info collected from the GUI into the logfile
         def collect_metadata(self):  
-                if os.path.exists(os.path.join(os.getcwd()+self.sbINFO.data[2])): 
-                        os.remove(os.path.join(os.getcwd()+self.sbINFO.data[2]))
+                print(self.sbINFO.data)
+                if os.path.exists(os.path.join(os.getcwd()+self.sbINFO.data[1])): 
+                        os.remove(os.path.join(os.getcwd()+self.sbINFO.data[1]))
                 if not os.path.exists(os.path.join(os.getcwd(),'log_file')):
                         os.mkdir(os.path.join(os.getcwd(),'log_file'))
-                f = open(os.path.join(os.getcwd() + '/log_file/output_log_{}_{}_full.csv'.format(self.sbINFO.data[2],self.INFO['Experiment Seed'])), 'w', newline='')
-                fq = open(os.path.join(os.getcwd() + '/log_file/output_log_{}_{}.csv'.format(self.sbINFO.data[2],self.INFO['Experiment Seed'])), 'w', newline='')
+                f = open(os.path.join(os.getcwd() + '/log_file/output_log_{}_{}_full.csv'.format(self.sbINFO.data[1],self.INFO['Experiment Seed'])), 'w', newline='')
+                fq = open(os.path.join(os.getcwd() + '/log_file/output_log_{}_{}.csv'.format(self.sbINFO.data[1],self.INFO['Experiment Seed'])), 'w', newline='')
                 metawriter = csv.writer(f)
                 metawriter2 = csv.writer(fq)
                 metawriter.writerow(["METADATA:"])
@@ -68,7 +69,7 @@ class taskbattery(metadatacollection):
                 taskbattery.ESQtask = ESQtask
                 self.INFO = INFO
                 self.taskexeclist = []
-                self.win = visual.Window(size=(1440, 960),color='white', winType='pyglet',fullscr=False)
+                self.win = visual.Window(size=(1440, 960),color='white', winType='pyglet',fullscr=True)
                 self.text = text_2 = visual.TextStim(win=self.win, name='text_2',
                         text='Welcome to our experiment. \n Please follow the instructions on-screen and notify the attending researcher if anything is unclear \n We are thankful for your participation. \n Press <return/enter> to continue.',
                         font='Arial',
@@ -331,6 +332,7 @@ if __name__ == "__main__":
         INFO = {
                         'Experiment Seed': random.randint(1, 9999999),  
                         'Subject': 'Enter Name Here', 
+                        
                         }
 
 
@@ -417,7 +419,7 @@ if __name__ == "__main__":
 
 
         fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main,twobackTask_grp]
- 
+        fulltasklist = [self_other]
         
         # Shuffles the order of the tasks in taskgroups
         for enum, blk in enumerate(fulltasklist):

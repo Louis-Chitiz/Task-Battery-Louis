@@ -282,6 +282,6 @@ def runexp(filename, timer, win, writer, resdict, runtime,dfile, seed):
     cwd = os.getcwd()
     block = random.choice(os.listdir(os.path.join(PATH,blocktype)))
     data = os.path.join(PATH, blocktype, block)
-    resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : None, 'Task Iteration': None, 'Participant ID': None,'Response_Key':None, 'Auxillary Data': None}
-    timer = core.Clock()
+    #resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : None, 'Task Iteration': None, 'Participant ID': None,'Response_Key':None, 'Auxillary Data': None}
+    #timer = core.Clock()
     runexp1(timer, win, writer, resdict,  data, runtime)
