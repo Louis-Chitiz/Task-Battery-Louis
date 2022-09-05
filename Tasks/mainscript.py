@@ -331,7 +331,6 @@ if __name__ == "__main__":
         INFO = {
                         'Experiment Seed': random.randint(1, 9999999),  
                         'Subject': 'Enter Name Here', 
-                        'Block Runtime': 75
                         }
 
 
@@ -343,6 +342,7 @@ if __name__ == "__main__":
         metacoll = metadatacollection(INFO)
         metacoll.rungui()
         metacoll.collect_metadata()
+        metacoll.INFO['Block Runtime'] = 75
         
         # Defining output datafile
         datafile = str(os.getcwd() + '/log_file/output_log_{}_{}.csv'.format(metacoll.INFO['Subject'],metacoll.INFO['Experiment Seed']))
