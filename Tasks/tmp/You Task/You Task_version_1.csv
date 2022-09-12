@@ -1,4 +1,5 @@
 Trial_No,Type,Condition,Stim1,Stim1_F1,Stim1_F2,Stim2,Stim2_F1,Stim2_F2,Stim3,Stim3_F1,Stim3_F2,Stim4,Stim4_F1,Stim4_F2,Corr_Resp
+<<<<<<< HEAD
 17,E,4,You,C,NA,daring,CL,Positive,NA,NA,NA,NA,NA,NA,No
 34,E,2,You,C,NA,stubborn,CU,Negative,NA,NA,NA,NA,NA,NA,NIL
 45,E,2,You,C,NA,irritable,CU,Negative,NA,NA,NA,NA,NA,NA,NIL
@@ -31,3 +32,37 @@ Trial_No,Type,Condition,Stim1,Stim1_F1,Stim1_F2,Stim2,Stim2_F1,Stim2_F2,Stim3,St
 13,E,1,You,C,NA,enthusiastic,CU,Positive,NA,NA,NA,NA,NA,NA,NIL
 11,E,2,You,C,NA,narrow-minded,CL,Negative,NA,NA,NA,NA,NA,NA,NIL
 23,E,3,You,C,NA,persuasive,CU,Positive,NA,NA,NA,NA,NA,NA,Yes
+=======
+9,E,4,You,C,NA,conceited,CL,Negative,NA,NA,NA,NA,NA,NA,No
+9,E,1,You,C,NA,witty,CL,Positive,NA,NA,NA,NA,NA,NA,NIL
+11,E,3,You,C,NA,overcritical,CU,Negative,NA,NA,NA,NA,NA,NA,Yes
+37,E,2,You,C,NA,disobedient,CL,Negative,NA,NA,NA,NA,NA,NA,NIL
+15,E,1,You,C,NA,courteous,CU,Positive,NA,NA,NA,NA,NA,NA,NIL
+16,E,1,You,C,NA,talkative,CL,Positive,NA,NA,NA,NA,NA,NA,NIL
+19,E,4,You,C,NA,thrifty,CL,Positive,NA,NA,NA,NA,NA,NA,No
+8,E,2,You,C,NA,unkind,CL,Negative,NA,NA,NA,NA,NA,NA,NIL
+2,E,3,You,C,NA,mean,CU,Negative,NA,NA,NA,NA,NA,NA,Yes
+40,E,4,You,C,NA,curious,CL,Positive,NA,NA,NA,NA,NA,NA,No
+6,E,3,You,C,NA,capable,CU,Positive,NA,NA,NA,NA,NA,NA,Yes
+21,E,4,You,C,NA,angry,CL,Negative,NA,NA,NA,NA,NA,NA,No
+7,E,1,You,C,NA,well-mannered,CL,Positive,NA,NA,NA,NA,NA,NA,NIL
+10,E,1,You,C,NA,bold,CU,Positive,NA,NA,NA,NA,NA,NA,NIL
+48,E,1,You,C,NA,sensible,CU,Positive,NA,NA,NA,NA,NA,NA,NIL
+2,E,2,You,C,NA,unsympathetic,CL,Negative,NA,NA,NA,NA,NA,NA,NIL
+18,E,4,You,C,NA,pessimistic,CL,Negative,NA,NA,NA,NA,NA,NA,No
+33,E,2,You,C,NA,irritating,CL,Negative,NA,NA,NA,NA,NA,NA,NIL
+5,E,3,You,C,NA,obnoxious,CU,Negative,NA,NA,NA,NA,NA,NA,Yes
+27,E,4,You,C,NA,careful,CL,Positive,NA,NA,NA,NA,NA,NA,No
+35,E,4,You,C,NA,insecure,CL,Negative,NA,NA,NA,NA,NA,NA,No
+15,E,2,You,C,NA,self -centered,CU,Negative,NA,NA,NA,NA,NA,NA,NIL
+26,E,2,You,C,NA,superstitious,CU,Negative,NA,NA,NA,NA,NA,NA,NIL
+13,E,1,You,C,NA,enthusiastic,CU,Positive,NA,NA,NA,NA,NA,NA,NIL
+8,E,1,You,C,NA,patient,CU,Positive,NA,NA,NA,NA,NA,NA,NIL
+5,E,4,You,C,NA,punctual,CL,Positive,NA,NA,NA,NA,NA,NA,No
+43,E,1,You,C,NA,frank,CU,Positive,NA,NA,NA,NA,NA,NA,NIL
+24,E,3,You,C,NA,moody,CU,Negative,NA,NA,NA,NA,NA,NA,Yes
+14,E,1,You,C,NA,imaginative,CU,Positive,NA,NA,NA,NA,NA,NA,NIL
+23,E,3,You,C,NA,persuasive,CU,Positive,NA,NA,NA,NA,NA,NA,Yes
+28,E,3,You,C,NA,warm,CU,Positive,NA,NA,NA,NA,NA,NA,Yes
+19,E,1,You,C,NA,cheerful,CL,Positive,NA,NA,NA,NA,NA,NA,NIL
+>>>>>>> d5179a9f3587032c9f9f1717d0dc202e0ec34ca2
