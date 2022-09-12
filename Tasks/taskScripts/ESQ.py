@@ -250,21 +250,24 @@ def runexp(filename, timer, win, writers, resdict, runtime,dfile,seed,movietype=
         
     #for enum, i in enumerate(range(0,1)):     #Shortened
         #if i < len(ES_fixed.trialList):
+        event.clearEvents()
         if i < len(ES_fixed.trialList):
             question = ES_fixed.next()
             resdict['Timepoint'], resdict['Time'], resdict['Experience Sampling Question'] = 'ESQ', timer.getTime(), str(question['Label'] + "_start")
             writera.writerow(resdict)
-            #writerb.writerow(resdict)
+
             resdict['Timepoint'], resdict['Time'],resdict['Experience Sampling Question'],resdict['Experience Sampling Response'], resdict['Auxillary Data'] = None,None,None,None,None
         ratingScale.noResponse = True
         rand = random.randrange(1,10,1)
         ratingScale.markerStart = rand
         keyState=key.KeyStateHandler()
+
         win.winHandle.push_handlers(keyState)
 
         pos = ratingScale.markerStart
         inc=0.1
         ratingScale.noResponse = True
+
         while ratingScale.noResponse:  #key 4 not pressed
             if keyState[key.LEFT] is True:
                 pos -= inc
