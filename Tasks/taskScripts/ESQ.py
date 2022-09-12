@@ -247,6 +247,7 @@ def runexp(filename, timer, win, writers, resdict, runtime,dfile,seed,movietype=
 
     #       get each question from Questionnaire:
     for enum, i in enumerate(range(0,len(ES_fixed.trialList))):
+        
     #for enum, i in enumerate(range(0,1)):     #Shortened
         #if i < len(ES_fixed.trialList):
         if i < len(ES_fixed.trialList):
@@ -263,6 +264,7 @@ def runexp(filename, timer, win, writers, resdict, runtime,dfile,seed,movietype=
 
         pos = ratingScale.markerStart
         inc=0.1
+        ratingScale.noResponse = True
         while ratingScale.noResponse:  #key 4 not pressed
             if keyState[key.LEFT] is True:
                 pos -= inc
