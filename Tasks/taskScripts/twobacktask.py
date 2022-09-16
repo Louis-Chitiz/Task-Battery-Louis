@@ -176,10 +176,10 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
                 #     pass
                 trial_onset = win.flip()  # when expression is displayed, this is the trial onset
                 timetodraw = trial_onset + expr_time
-                while core.monotonicClock.getTime() < (timetodraw - (1/120.0)):
-                        pass
+                # while core.monotonicClock.getTime() < (timetodraw - (1/120.0)):
+                #         pass
                 event.clearEvents()
-                choice_onset = win.flip()
+                #choice_onset = win.flip()
                 keys = event.waitKeys(maxWait = timelimit_deci, keyList =['left','right'],timeStamped = True)
                 fixa.draw()
                 win.flip()
@@ -202,7 +202,7 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
                     
                     else:
                         keypress = keys[0][0]
-                        RT = keys[0][1] - choice_onset  
+                        RT = keys[0][1] - trial_onset  
                         if trial["correct_ans"] == '1':
                             trial["correct_ans"] = 'left'
                         if trial["correct_ans"] == '2':
@@ -212,12 +212,12 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
                         trial['correct'] = correct
                         trial['KeyPress'] = keypress
                         
-                        resultdictWriter('2-back Trial End',timer,writer, correct)
+                        #resultdictWriter('2-back Trial End',timer,writer, correct)
 
             
                 # trial['i_trial_onset'] = float( pretrialFixDur) + float( trial['expr_onset'])
                 trial['trial_onset']   = trial_onset - run_onset
-                trial['choice_onset']  = choice_onset - run_onset
+                #trial['choice_onset']  = choice_onset - run_onset
                 trial['RT'] = RT
                 trial['correct'] = correct
                 trial['KeyPress'] = keypress
