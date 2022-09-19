@@ -18,15 +18,7 @@ BLOCKS = ['faces_A', 'faces_B', 'scenes_A', 'scenes_B']
 
 def runexp1(timer, win, writer, resultdict, data, runtime):
     stimuli_file = data
-    ### Initialize variables
 
-    # file related
-
-    expName = '2-back Task'
-    # stimuli = 'new_math_stimuli'
-    data_folder = 'data' + '_' +  expName
-
-    # experiment details related
     expr_time = 2 # formal experiment, it is 1.45
     choi_time = 2  # formal experiment, it is 1.45
     blank_time = 0.1   # display a blank screen
@@ -53,9 +45,11 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
 
     #write to resultdict
     def resultdictWriter(timepoint,timer,writer, iscorrect=None):
-        resultdict['Timepoint'], resultdict['Time'], resultdict['Is_correct'] = timepoint, timer.getTime(), iscorrect
+        dataver = data.split("/")[-1].split("_")[0]
+        #print(dataver)
+        resultdict['Timepoint'], resultdict['Time'], resultdict['Is_correct'],resultdict["Auxillary Data"] = timepoint, timer.getTime(), iscorrect,dataver
         writer.writerow(resultdict)
-        resultdict['Timepoint'], resultdict['Time'] = None,None
+        resultdict['Timepoint'], resultdict['Time'],resultdict["Auxillary Data"] = None,None,None
 
     # get the current directory of this script - correct
     def get_pwd():
