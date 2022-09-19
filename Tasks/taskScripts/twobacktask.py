@@ -14,7 +14,7 @@ import pandas as pd
 PATH = "taskScripts/resources/TwoBack_Task/blocks/"
 STIMPATH = "taskScripts/resources/TwoBack_Task/WM Stimuli/"
 #This is a list of pre-generated blocks. See the block_generator scripts for how I created them.
-BLOCKS = ['faces_A', 'faces_B', 'scenes_A', 'scenes_B']
+BLOCKS = ['faces_B','scenes_B']
 
 def runexp1(timer, win, writer, resultdict, data, runtime,dataver):
     stimuli_file = data
@@ -270,10 +270,17 @@ def runexp1(timer, win, writer, resultdict, data, runtime,dataver):
     resultdictWriter('2-back Task End',timer,writer)
 
 def runexp(filename, timer, win, writer, resdict, runtime,dfile, seed):
-    
+    #print()
     writer = writer[0]
     random.seed(a=seed)
-    blocktype = random.choice(BLOCKS)
+    if dfile.split("_")[-1].split(".")[0] == "0":
+        blocktype = "faces_A"
+    elif dfile.split("_")[-1].split(".")[0] == "1":
+        blocktype = "scenes_A"
+    else:
+        print("else")
+        
+        blocktype = random.choice(BLOCKS)
     cwd = os.getcwd()
     block = random.choice(os.listdir(os.path.join(PATH,blocktype)))
     data = os.path.join(PATH, blocktype, block)
