@@ -70,7 +70,7 @@ def runexp(filename, timer, win, writer, resdict, runtime,dfile,seed):
     
     trialvideo = os.path.join(os.getcwd(), 'taskScripts//resources//Movie_Task//videos') + "/" + list_of_videos[filename-1]
 
-
+    trialname = "Movie Task-" + trialvideo.split(".")[0].split("/")[-1]
     
     
     
@@ -98,7 +98,7 @@ def runexp(filename, timer, win, writer, resdict, runtime,dfile,seed):
                 if expClock.getTime() > timelimit: 
                     mov.pause()
                     timepause = runtime - expClock.getTime() 
-                    ESQ.runexp(None,timer,win,[writer,writera],resdict,None,None,None,movietype="Movie Task".format(list_of_videos[filename-1]))
+                    ESQ.runexp(None,timer,win,[writer,writera],resdict,None,None,None,movietype=trialname)
                     resdict['Assoc Task'] = None
                     mov.play()
                     expClock.reset()
@@ -117,3 +117,4 @@ def runexp(filename, timer, win, writer, resdict, runtime,dfile,seed):
     resdict['Timepoint'], resdict['Time'],resdict['Auxillary Data'] = 'Movie End {}'.format(list_of_videos[filename-1]), timer.getTime(), timelimitpercent
     writer.writerow(resdict)
     resdict['Timepoint'], resdict['Time'],resdict['Auxillary Data'] = None,None,None
+    return trialname

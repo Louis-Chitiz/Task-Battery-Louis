@@ -16,7 +16,7 @@ STIMPATH = "taskScripts/resources/TwoBack_Task/WM Stimuli/"
 #This is a list of pre-generated blocks. See the block_generator scripts for how I created them.
 BLOCKS = ['faces_A', 'faces_B', 'scenes_A', 'scenes_B']
 
-def runexp1(timer, win, writer, resultdict, data, runtime):
+def runexp1(timer, win, writer, resultdict, data, runtime,dataver):
     stimuli_file = data
 
     expr_time = 2 # formal experiment, it is 1.45
@@ -45,7 +45,7 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
 
     #write to resultdict
     def resultdictWriter(timepoint,timer,writer, iscorrect=None):
-        dataver = data.split("/")[-1].split("_")[0]
+        
         #print(dataver)
         resultdict['Timepoint'], resultdict['Time'], resultdict['Is_correct'],resultdict["Auxillary Data"] = timepoint, timer.getTime(), iscorrect,dataver
         writer.writerow(resultdict)
@@ -270,12 +270,15 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
     resultdictWriter('2-back Task End',timer,writer)
 
 def runexp(filename, timer, win, writer, resdict, runtime,dfile, seed):
+    
     writer = writer[0]
     random.seed(a=seed)
     blocktype = random.choice(BLOCKS)
     cwd = os.getcwd()
     block = random.choice(os.listdir(os.path.join(PATH,blocktype)))
     data = os.path.join(PATH, blocktype, block)
+    dataver = data.split("/")[-1].split("_")[0]
     #resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : None, 'Task Iteration': None, 'Participant ID': None,'Response_Key':None, 'Auxillary Data': None}
     #timer = core.Clock()
-    runexp1(timer, win, writer, resdict,  data, runtime)
+    runexp1(timer, win, writer, resdict,  data, runtime,dataver)
+    return dataver
