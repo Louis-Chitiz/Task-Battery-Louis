@@ -241,21 +241,24 @@ class task(taskbattery,metadatacollection):
                 taskbattery.resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : self.name, 'Task Iteration': '1', 'Participant ID': self.trialclass[1], 'Response_Key' : None, 'Auxillary Data': None, 'Assoc Task':None}
                 if self.esq == False:
                         if self.ver == 1:
-                                self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_b_name, int(metacoll.INFO['Experiment Seed']))
+                                dataver = self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_a_name, int(metacoll.INFO['Experiment Seed']))
                         if self.ver == 2:
-                                self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_b_name, int(metacoll.INFO['Experiment Seed']))
+                                dataver = self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_b_name, int(metacoll.INFO['Experiment Seed']))
                         if self.ver == 3:
-                                self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_c_name, int(metacoll.INFO['Experiment Seed']))
+                                dataver = self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_c_name, int(metacoll.INFO['Experiment Seed']))
                         if self.ver == 4:
-                                self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_d_name, int(metacoll.INFO['Experiment Seed']))
+                                dataver = self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, self._ver_d_name, int(metacoll.INFO['Experiment Seed']))
                 
                 if self.esq == True:
                         
                         taskbattery.resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : self.name, 'Task Iteration': '1', 'Participant ID': self.trialclass[1], 'Response_Key' : None, 'Auxillary Data': None, 'Assoc Task':taskbattery.prevname}
                         self.task_module.runexp(self.backup_log_location, taskbattery.time, taskbattery.win, [writer,writer2], taskbattery.resultdict, self.runtime, None, int(metacoll.INFO['Experiment Seed']))
+                        dataver = None
                 f.close()
                 fr.close()
                 taskbattery.resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : None, 'Task Iteration': None, 'Participant ID': None,'Response_Key':None, 'Auxillary Data': None, 'Assoc Task':None}
+                if dataver != None:
+                        self.name = self.name + "-" + dataver
                 taskbattery.prevname = self.name
 
 
@@ -412,13 +415,15 @@ if __name__ == "__main__":
         oneback_zeroback = taskgroup([[zerobackTask,zerobackTask2,zerobackTask3],[onebackTask,onebackTask2,onebackTask3]],"resources/group_inst/oneback_zeroback.txt")
         ezmath_hrdmath = taskgroup([[easymathTask1,easymathTask2,easymathTask3],[hardmathTask1,hardmathTask2,hardmathTask3]],"resources/group_inst/ezmath_hrdmath.txt")
         twobackTask_grp = taskgroup([[twobackTask1,twobackTask2,twobackTask3]],"resources/group_inst/ezmath_hrdmath.txt")
-        movie_main = taskgroup([[movieTask1,movieTask2,movieTask3,movieTask4]],"resources/group_inst/movie_main.txt")
+        movie_main = taskgroup([[movieTask1,movieTask2]],"resources/group_inst/movie_main.txt")
         
         
         
 
 
         fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main,twobackTask_grp]
+       
+
 
         
         # Shuffles the order of the tasks in taskgroups

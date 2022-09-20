@@ -14,19 +14,11 @@ import pandas as pd
 PATH = "taskScripts/resources/TwoBack_Task/blocks/"
 STIMPATH = "taskScripts/resources/TwoBack_Task/WM Stimuli/"
 #This is a list of pre-generated blocks. See the block_generator scripts for how I created them.
-BLOCKS = ['faces_A', 'faces_B', 'scenes_A', 'scenes_B']
+BLOCKS = ['faces_B','scenes_B']
 
-def runexp1(timer, win, writer, resultdict, data, runtime):
+def runexp1(timer, win, writer, resultdict, data, runtime,dataver):
     stimuli_file = data
-    ### Initialize variables
 
-    # file related
-
-    expName = '2-back Task'
-    # stimuli = 'new_math_stimuli'
-    data_folder = 'data' + '_' +  expName
-
-    # experiment details related
     expr_time = 2 # formal experiment, it is 1.45
     choi_time = 2  # formal experiment, it is 1.45
     blank_time = 0.1   # display a blank screen
@@ -53,9 +45,11 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
 
     #write to resultdict
     def resultdictWriter(timepoint,timer,writer, iscorrect=None):
-        resultdict['Timepoint'], resultdict['Time'], resultdict['Is_correct'] = timepoint, timer.getTime(), iscorrect
+        
+        #print(dataver)
+        resultdict['Timepoint'], resultdict['Time'], resultdict['Is_correct'],resultdict["Auxillary Data"] = timepoint, timer.getTime(), iscorrect,dataver
         writer.writerow(resultdict)
-        resultdict['Timepoint'], resultdict['Time'] = None,None
+        resultdict['Timepoint'], resultdict['Time'],resultdict["Auxillary Data"] = None,None,None
 
     # get the current directory of this script - correct
     def get_pwd():
@@ -176,10 +170,10 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
                 #     pass
                 trial_onset = win.flip()  # when expression is displayed, this is the trial onset
                 timetodraw = trial_onset + expr_time
-                while core.monotonicClock.getTime() < (timetodraw - (1/120.0)):
-                        pass
+                # while core.monotonicClock.getTime() < (timetodraw - (1/120.0)):
+                #         pass
                 event.clearEvents()
-                choice_onset = win.flip()
+                #choice_onset = win.flip()
                 keys = event.waitKeys(maxWait = timelimit_deci, keyList =['left','right'],timeStamped = True)
                 fixa.draw()
                 win.flip()
@@ -202,7 +196,7 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
                     
                     else:
                         keypress = keys[0][0]
-                        RT = keys[0][1] - choice_onset  
+                        RT = keys[0][1] - trial_onset  
                         if trial["correct_ans"] == '1':
                             trial["correct_ans"] = 'left'
                         if trial["correct_ans"] == '2':
@@ -212,12 +206,12 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
                         trial['correct'] = correct
                         trial['KeyPress'] = keypress
                         
-                        resultdictWriter('2-back Trial End',timer,writer, correct)
+                        #resultdictWriter('2-back Trial End',timer,writer, correct)
 
             
                 # trial['i_trial_onset'] = float( pretrialFixDur) + float( trial['expr_onset'])
                 trial['trial_onset']   = trial_onset - run_onset
-                trial['choice_onset']  = choice_onset - run_onset
+                #trial['choice_onset']  = choice_onset - run_onset
                 trial['RT'] = RT
                 trial['correct'] = correct
                 trial['KeyPress'] = keypress
@@ -276,12 +270,22 @@ def runexp1(timer, win, writer, resultdict, data, runtime):
     resultdictWriter('2-back Task End',timer,writer)
 
 def runexp(filename, timer, win, writer, resdict, runtime,dfile, seed):
+    #print()
     writer = writer[0]
     random.seed(a=seed)
-    blocktype = random.choice(BLOCKS)
+    if dfile.split("_")[-1].split(".")[0] == "0":
+        blocktype = "faces_A"
+    elif dfile.split("_")[-1].split(".")[0] == "1":
+        blocktype = "scenes_A"
+    else:
+        print("else")
+        
+        blocktype = random.choice(BLOCKS)
     cwd = os.getcwd()
     block = random.choice(os.listdir(os.path.join(PATH,blocktype)))
     data = os.path.join(PATH, blocktype, block)
+    dataver = data.split("/")[-1].split("_")[0]
     #resultdict = {'Timepoint': None, 'Time': None, 'Is_correct': None, 'Experience Sampling Question': None, 'Experience Sampling Response':None, 'Task' : None, 'Task Iteration': None, 'Participant ID': None,'Response_Key':None, 'Auxillary Data': None}
     #timer = core.Clock()
-    runexp1(timer, win, writer, resdict,  data, runtime)
+    runexp1(timer, win, writer, resdict,  data, runtime,dataver)
+    return dataver
