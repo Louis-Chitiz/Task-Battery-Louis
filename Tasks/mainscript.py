@@ -424,7 +424,7 @@ if __name__ == "__main__":
 
 
         fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main,twobackTask_grp]
-        fulltasklist = [twobackTask_grp]
+        # fulltasklist = [twobackTask_grp]
 
 
         
