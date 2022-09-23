@@ -276,7 +276,7 @@ def runexp(filename, timer, win, writer, resdict, runtime,dfile, seed):
     if dfile.split("_")[-1].split(".")[0] == "0":
         blocktype = "faces_A"
     elif dfile.split("_")[-1].split(".")[0] == "1":
-        blocktype = "scenes_A"
+        blocktype = "faces_B"
     else:
         print("else")
         
