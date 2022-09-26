@@ -352,10 +352,10 @@ if __name__ == "__main__":
         # Defining output datafile
         datafile = str(os.getcwd() + '/log_file/output_log_{}_{}.csv'.format(metacoll.INFO['Subject'],metacoll.INFO['Experiment Seed']))
         datafileBackup = 'log_file/testfullbackup.csv'
-        if os.path.exists("tmp/esqtmp.pkl"):
-                os.remove("tmp/esqtmp.pkl")
-        with open("tmp/esqtmp.pkl",'wb') as frrr:
-                pkl.dump([datafile,datafileBackup,metacoll.sbINFO.data,int(metacoll.INFO['Block Runtime'])],frrr)
+        # if os.path.exists("tmp/esqtmp.pkl"):
+        #         os.remove("tmp/esqtmp.pkl")
+        # with open("tmp/esqtmp.pkl",'wb') as frrr:
+        #         pkl.dump([datafile,datafileBackup,metacoll.sbINFO.data,int(metacoll.INFO['Block Runtime'])],frrr)
         ESQTask = task(taskScripts.ESQ, datafile, datafileBackup, "Experience Sampling Questions", metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv',1, esq=True)
         
         # Defining each task as a task object
@@ -425,7 +425,7 @@ if __name__ == "__main__":
 
         fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main,twobackTask_grp]
   
-
+     
 
         
         # Shuffles the order of the tasks in taskgroups
