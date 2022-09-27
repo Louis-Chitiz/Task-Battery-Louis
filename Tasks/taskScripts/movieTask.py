@@ -27,10 +27,10 @@ def runexp(filename, timer, win, writer, resdict, runtime,dfile,seed):
     instructions = """You will be presented with several video clips. These clips are rated 15 and contain extreme violence, aggression and bad language. If you find these types of clips distressing, please do not participate in this study. 
     \nIf at any point, you become distressed and would like to stop the task, please inform the experimenter. You will not be penalised for withdrawing from the study. 
     \nAt the end of each task block, you will be asked to rate several statements about the ongoing thoughts you experienced during that block. 
-    \nPress enter or return to begin the experiment meow."""
+    \nPress enter or return to begin the experiment now."""
 
     # user can update start screen text here if required. 
-    start_screen = "The experiment is about to start. Press return to continue."
+    start_screen = "The experiment is about to start. Please adjust the volume to a comfortable level using the keys on the top of the keyboard. \n Press return to continue."
 
 
     
