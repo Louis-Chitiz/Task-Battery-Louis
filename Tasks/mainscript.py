@@ -352,8 +352,8 @@ if __name__ == "__main__":
         # Defining output datafile
         datafile = str(os.getcwd() + '/log_file/output_log_{}_{}.csv'.format(metacoll.INFO['Subject'],metacoll.INFO['Experiment Seed']))
         datafileBackup = 'log_file/testfullbackup.csv'
-        # if os.path.exists("tmp/esqtmp.pkl"):
-        #         os.remove("tmp/esqtmp.pkl")
+        if os.path.exists("tmp"):
+                os.mkdir("tmp")
         # with open("tmp/esqtmp.pkl",'wb') as frrr:
         #         pkl.dump([datafile,datafileBackup,metacoll.sbINFO.data,int(metacoll.INFO['Block Runtime'])],frrr)
         ESQTask = task(taskScripts.ESQ, datafile, datafileBackup, "Experience Sampling Questions", metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources/GoNoGo_Task/gonogo_stimuli.csv',1, esq=True)
