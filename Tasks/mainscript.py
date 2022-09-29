@@ -352,7 +352,7 @@ if __name__ == "__main__":
         # Defining output datafile
         datafile = str(os.getcwd() + '/log_file/output_log_{}_{}.csv'.format(metacoll.INFO['Subject'],metacoll.INFO['Experiment Seed']))
         datafileBackup = 'log_file/testfullbackup.csv'
-        if os.path.exists("tmp"):
+        if not os.path.exists("tmp"):
                 os.mkdir("tmp")
         # with open("tmp/esqtmp.pkl",'wb') as frrr:
         #         pkl.dump([datafile,datafileBackup,metacoll.sbINFO.data,int(metacoll.INFO['Block Runtime'])],frrr)
