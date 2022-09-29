@@ -1,4 +1,4 @@
-@ECHO OF
+@ECHO OFF
 REM setlocal enabledelayedexpansion
 if not defined in_subprocess (cmd /k set in_subprocess=y ^& %0 %*) & exit )
 md Internal_Logs
