@@ -2267,3 +2267,941 @@ ESQ,4655.776744600036,,Knowledge_start,,Experience Sampling Questions,1,subject0
 ESQ,4658.858699599979,,Knowledge_response,7.999999999999992,Experience Sampling Questions,1,subject012,,Marker Started at 2,One-Back Task
 ESQ,4658.86036130006,,Detailed_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
 ESQ,4662.177670800011,,Detailed_response,7.899999999999992,Experience Sampling Questions,1,subject012,,Marker Started at 2,One-Back Task
+EXPERIMENT DATA:,One-Back Task
+Start Time,4662.195472800056
+0-Back Start,4662.195508399978,,,,One-Back Task,1,subject012,,,
+NoGoStimulus Start,4668.212931800052,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4669.017885299982,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4670.776105200057,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4672.070527200005,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4674.067756299977,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4675.139466200024,True,,,One-Back Task,1,subject012,None,OneBack,
+OneBackStimulus Start,4677.440276300069,,,,One-Back Task,1,subject012,,OneBack,
+OneBackStimulus End,4678.17541060003,True,,,One-Back Task,1,subject012,left,OneBack,
+NoGoStimulus Start,4683.086999100051,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4684.24697680003,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4686.319222699967,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4687.299287099973,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4689.014748000074,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4690.351119300001,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4691.990224700072,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4693.403692099964,True,,,One-Back Task,1,subject012,None,OneBack,
+OneBackStimulus Start,4695.587254400016,,,,One-Back Task,1,subject012,,OneBack,
+OneBackStimulus End,4696.272877500043,True,,,One-Back Task,1,subject012,left,OneBack,
+NoGoStimulus Start,4701.046925500035,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4702.510792199988,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4704.819112700061,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4705.563260999974,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4707.242234900012,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4708.617650800035,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4710.51267820003,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4711.670400500065,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4713.261073800037,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4714.720852700062,True,,,One-Back Task,1,subject012,None,OneBack,
+OneBackStimulus Start,4716.332850200008,,,,One-Back Task,1,subject012,,OneBack,
+OneBackStimulus End,4717.4912606000435,True,,,One-Back Task,1,subject012,left,OneBack,
+NoGoStimulus Start,4722.587249199976,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4723.812846300076,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4725.961370300036,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4726.863959699986,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4728.756642400054,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4729.915455900016,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4732.3051860000705,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4732.968794799992,True,,,One-Back Task,1,subject012,None,OneBack,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,4732.991220999975
+ESQ,4734.533729100018,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4741.340682500042,,Intrusive_response,9.199999999999987,Experience Sampling Questions,1,subject012,,Marker Started at 3,One-Back Task
+ESQ,4741.341214800021,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4744.577937699971,,Deliberate_response,2.5999999999999996,Experience Sampling Questions,1,subject012,,Marker Started at 3,One-Back Task
+ESQ,4744.579583500046,,Other_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4747.947013700032,,Other_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,One-Back Task
+ESQ,4747.948654000065,,Images_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4751.249002799974,,Images_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,One-Back Task
+ESQ,4751.250640099985,,Past_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4755.418803200009,,Past_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,One-Back Task
+ESQ,4755.420439100009,,Emotion_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4758.3877306000795,,Emotion_response,8.29999999999999,Experience Sampling Questions,1,subject012,,Marker Started at 2,One-Back Task
+ESQ,4758.389416099992,,Absorption_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4763.409939900041,,Absorption_response,8.500000000000005,Experience Sampling Questions,1,subject012,,Marker Started at 10,One-Back Task
+ESQ,4763.41162020003,,Detailed_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4766.409951800015,,Detailed_response,8.29999999999999,Experience Sampling Questions,1,subject012,,Marker Started at 2,One-Back Task
+ESQ,4766.4115738000255,,Distracting_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4769.229936200078,,Distracting_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,One-Back Task
+ESQ,4769.23156450002,,Sounds_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4773.16651000001,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,One-Back Task
+ESQ,4773.168134700041,,Words_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4775.953839399968,,Words_response,7.599999999999991,Experience Sampling Questions,1,subject012,,Marker Started at 5,One-Back Task
+ESQ,4775.955477999989,,Self_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4778.654289199971,,Self_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 6,One-Back Task
+ESQ,4778.655835799989,,Future_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4781.089855100028,,Future_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 7,One-Back Task
+ESQ,4781.091488200007,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4784.258766700048,,Knowledge_response,8.29999999999999,Experience Sampling Questions,1,subject012,,Marker Started at 3,One-Back Task
+ESQ,4784.2604373000795,,Problem_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4789.397765700007,,Problem_response,8.699999999999994,Experience Sampling Questions,1,subject012,,Marker Started at 7,One-Back Task
+ESQ,4789.39941120008,,Focus_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4791.881852300023,,Focus_response,8.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,One-Back Task
+EXPERIMENT DATA:,One-Back Task
+Start Time,4791.896322200075
+0-Back Start,4791.896358800004,,,,One-Back Task,1,subject012,,,
+NoGoStimulus Start,4799.601253399975,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4800.405631800066,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4802.164338500006,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4803.458726600045,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4805.45607970003,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4806.5278930000495,True,,,One-Back Task,1,subject012,None,OneBack,
+OneBackStimulus Start,4808.828154099989,,,,One-Back Task,1,subject012,,OneBack,
+OneBackStimulus End,4809.996792400023,True,,,One-Back Task,1,subject012,left,OneBack,
+NoGoStimulus Start,4814.489847199991,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4815.65139350004,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4817.72388960002,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4818.703957400052,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4820.419790200074,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4821.756532600033,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4823.394711800036,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4824.808900300064,True,,,One-Back Task,1,subject012,None,OneBack,
+OneBackStimulus Start,4826.993716500001,,,,One-Back Task,1,subject012,,OneBack,
+OneBackStimulus End,4828.511181500042,True,,,One-Back Task,1,subject012,left,OneBack,
+NoGoStimulus Start,4832.451096700039,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4833.915414600051,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4836.22335840005,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4836.968632500037,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4838.648958500009,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4840.037457300001,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4841.934230700019,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4843.091178799979,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4844.682138600037,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4846.1423872000305,True,,,One-Back Task,1,subject012,None,OneBack,
+OneBackStimulus Start,4847.754448699998,,,,One-Back Task,1,subject012,,OneBack,
+OneBackStimulus End,4848.912611600012,True,,,One-Back Task,1,subject012,left,OneBack,
+NoGoStimulus Start,4854.0089165000245,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4855.2349004000425,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4857.383097900078,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4858.301894500037,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4860.1940606000135,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4861.354620400001,True,,,One-Back Task,1,subject012,None,OneBack,
+NoGoStimulus Start,4863.7429784999695,,,,One-Back Task,1,subject012,,OneBack,
+NoGoStimulus End,4864.406859499984,True,,,One-Back Task,1,subject012,None,OneBack,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,4864.427337900037
+ESQ,4865.788975100033,,Focus_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4868.726061100024,,Focus_response,8.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,One-Back Task
+ESQ,4868.727748700068,,Past_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4872.145046500023,,Past_response,8.199999999999992,Experience Sampling Questions,1,subject012,,Marker Started at 6,One-Back Task
+ESQ,4872.146686000051,,Emotion_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4874.797799300053,,Emotion_response,9.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,One-Back Task
+ESQ,4874.799439999973,,Detailed_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4877.949987599975,,Detailed_response,3.1000000000000125,Experience Sampling Questions,1,subject012,,Marker Started at 9,One-Back Task
+ESQ,4877.9516106999945,,Self_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4881.236216300051,,Self_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 5,One-Back Task
+ESQ,4881.237831900013,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4884.187910699984,,Intrusive_response,8.700000000000005,Experience Sampling Questions,1,subject012,,Marker Started at 10,One-Back Task
+ESQ,4884.18954260007,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4886.673827599967,,Deliberate_response,2.400000000000005,Experience Sampling Questions,1,subject012,,Marker Started at 7,One-Back Task
+ESQ,4886.675458300044,,Images_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4889.526172199985,,Images_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,One-Back Task
+ESQ,4889.527792999987,,Sounds_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4892.811868300079,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,One-Back Task
+ESQ,4892.813461299986,,Future_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4895.832975000027,,Future_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,One-Back Task
+ESQ,4895.834610300022,,Other_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4901.101782200043,,Other_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,One-Back Task
+ESQ,4901.1023938000435,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4906.005988499965,,Knowledge_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,One-Back Task
+ESQ,4906.0076354000485,,Distracting_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4911.577077600057,,Distracting_response,6.299999999999997,Experience Sampling Questions,1,subject012,,Marker Started at 10,One-Back Task
+ESQ,4911.577620900003,,Absorption_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4915.313042400056,,Absorption_response,7.700000000000001,Experience Sampling Questions,1,subject012,,Marker Started at 8,One-Back Task
+ESQ,4915.314700699993,,Problem_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4922.06814550003,,Problem_response,7.600000000000001,Experience Sampling Questions,1,subject012,,Marker Started at 8,One-Back Task
+ESQ,4922.069783700048,,Words_start,,Experience Sampling Questions,1,subject012,,,One-Back Task
+ESQ,4925.020064400043,,Words_response,9.899999999999993,Experience Sampling Questions,1,subject012,,Marker Started at 8,One-Back Task
+EXPERIMENT DATA:,Two-Back Task
+Start Time,5008.707263999968
+2-back Task Start,5032.766491000075,,,,Two-Back Task,1,subject012,,scenes,
+fixation cross,5032.793708599987,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5034.863986000069,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5034.864015200059,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5036.894172200002,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5036.894228899968,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5038.941585000022,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5038.94160999998,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5040.964097000076,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5040.9641589999665,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5043.002401200007,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5043.002426699968,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5045.03401459998,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5045.034071200062,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5047.0816873,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5047.081713199965,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5049.103892000043,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5049.10395150003,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5051.15043899999,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5051.1504646000685,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5053.173729100032,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5053.17378339998,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5055.209894999978,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5055.209919800051,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5056.543273800053,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5056.543350000051,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5058.587004599976,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5058.58703090006,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5060.613108800026,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5060.613176200073,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5062.659951000009,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5062.659978099982,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5064.682918400038,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5064.682971399976,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5066.720871299971,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5066.7208973000525,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5068.754079299979,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5068.754128800007,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5070.8047810000135,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5070.804807099979,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5072.839554100065,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5072.8396219999995,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5074.876580600045,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5074.876604499994,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5075.49180920003,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5075.491909999982,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5077.5449631999945,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5077.544989200076,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5078.593795399996,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5078.593827400007,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5080.649179800064,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5080.649208000046,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5081.329975500004,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5081.3300767000765,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5083.378801600076,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5083.37883010006,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5084.1149707,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5084.115005000029,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5086.1689530999865,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5086.168980100076,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5087.417930600001,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5087.418007700006,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5089.455755800009,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5089.455780799966,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5091.488125400036,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5091.488214200013,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5093.52578580007,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5093.525811800035,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5094.25761109998,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5094.257643699995,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5096.301259799977,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5096.301287100068,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5097.209325800068,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5097.209403100074,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5099.264575000037,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5099.264600800001,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5099.9782058000565,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5099.978305700002,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5102.041921299999,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5102.041958100046,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5102.713725800044,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5102.713801300037,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5104.762170400005,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5104.762196499971,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5105.582724999986,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5105.582829799969,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5107.6279891000595,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5107.628015300026,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5108.284867500071,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5108.284967100015,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5110.333082700032,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5110.3331088999985,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5112.320922999992,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5112.320989000029,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5114.360774900066,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5114.360800100025,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5116.390900500002,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5116.390959699987,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Task End,5118.408317800029,,,,Two-Back Task,1,subject012,,scenes,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,5118.411701600067
+ESQ,5119.708833200042,,Other_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5123.1629984000465,,Other_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 5,Two-Back Task-scenes
+ESQ,5123.1646480000345,,Detailed_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5126.014873799984,,Detailed_response,7.799999999999997,Experience Sampling Questions,1,subject012,,Marker Started at 7,Two-Back Task-scenes
+ESQ,5126.015561399981,,Distracting_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5129.084106200025,,Distracting_response,8.499999999999998,Experience Sampling Questions,1,subject012,,Marker Started at 8,Two-Back Task-scenes
+ESQ,5129.085749100079,,Words_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5131.652996400022,,Words_response,8.499999999999991,Experience Sampling Questions,1,subject012,,Marker Started at 6,Two-Back Task-scenes
+ESQ,5131.654582599993,,Absorption_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5135.373012199998,,Absorption_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Two-Back Task-scenes
+ESQ,5135.37466500001,,Problem_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5138.991927299998,,Problem_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Two-Back Task-scenes
+ESQ,5138.993618400069,,Emotion_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5143.111992200022,,Emotion_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Two-Back Task-scenes
+ESQ,5143.113779600011,,Focus_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5146.580144700012,,Focus_response,8.89999999999999,Experience Sampling Questions,1,subject012,,Marker Started at 6,Two-Back Task-scenes
+ESQ,5146.581776199979,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5156.556040300056,,Deliberate_response,8.199999999999992,Experience Sampling Questions,1,subject012,,Marker Started at 6,Two-Back Task-scenes
+ESQ,5156.557698199991,,Self_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5158.8244617000455,,Self_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Two-Back Task-scenes
+ESQ,5158.826096700039,,Images_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5163.110182899982,,Images_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Two-Back Task-scenes
+ESQ,5163.111809200025,,Future_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5170.167026799987,,Future_response,2.100000000000008,Experience Sampling Questions,1,subject012,,Marker Started at 8,Two-Back Task-scenes
+ESQ,5170.168659300078,,Sounds_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5175.004185799975,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Two-Back Task-scenes
+ESQ,5175.005835100077,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5177.456127900048,,Knowledge_response,9.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Two-Back Task-scenes
+ESQ,5177.457772599999,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5180.825452500023,,Intrusive_response,4.199999999999999,Experience Sampling Questions,1,subject012,,Marker Started at 5,Two-Back Task-scenes
+ESQ,5180.8270861000055,,Past_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5183.610161200049,,Past_response,7.299999999999993,Experience Sampling Questions,1,subject012,,Marker Started at 4,Two-Back Task-scenes
+EXPERIMENT DATA:,Two-Back Task
+Start Time,5183.626915400033
+2-back Task Start,5199.598876300035,,,,Two-Back Task,1,subject012,,scenes,
+fixation cross,5199.619323599967,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5201.668984399992,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5201.66900990007,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5202.827070500003,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5202.827171400073,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5204.8751182999695,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5204.875144400052,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5205.745538500021,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5205.74557020003,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5207.790705100051,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5207.790730900015,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5208.347769199987,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5208.3478412000695,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5210.403094800073,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5210.403121400042,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5211.049618400051,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5211.049650800065,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5213.089800200076,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5213.089824900031,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5214.051934999996,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5214.051973300055,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5216.092806300032,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5216.092832800001,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5216.854882100015,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5216.8549866999965,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5218.899390400038,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5218.899416400003,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5219.489528700011,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5219.48956310004,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5221.530215400038,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5221.530241,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5222.359217899968,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5222.359312899993,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5224.405955499969,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5224.405981100048,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5225.010623199982,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5225.010654599988,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5227.048421100015,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5227.048446199973,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5229.080878900015,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5229.080940200016,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5231.122879200033,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5231.122904899996,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5232.250469799968,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5232.250567200012,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5234.28921930003,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5234.289244299987,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5235.252242100076,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5235.252273000078,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5237.32586099999,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5237.325888999971,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5237.970969800022,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5237.97100140003,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5240.018196600024,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5240.018226100015,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5241.240933299996,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5241.241032000049,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5243.27737460006,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5243.27739860001,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5244.977070300025,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5244.97716660006,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5247.02304130001,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5247.023070299998,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5247.87961110007,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5247.879706699983,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5249.913651400013,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5249.913676699973,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5250.581047400017,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5250.58108230005,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5252.6284574000165,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5252.628482999979,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5253.850301300059,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5253.850335099967,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5255.881571599981,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5255.881601299974,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5257.537641200004,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5257.537672400009,False,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5259.590840100078,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5259.59086570004,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5260.273745800019,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5260.273860100075,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5262.309379399987,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5262.309404700063,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5262.924944399972,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5262.925040400005,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5264.971295700059,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5264.97132640006,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5265.676739300019,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5265.6768128999975,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial Start,5267.719795400044,,,,Two-Back Task,1,subject012,,scenes,
+Choice presented,5267.719822700019,,,,Two-Back Task,1,subject012,,scenes,
+Choice made,5268.229169000057,,,,Two-Back Task,1,subject012,,scenes,
+2-back Trial End,5268.229264799971,True,,,Two-Back Task,1,subject012,,scenes,
+2-back Task End,5270.246107200044,,,,Two-Back Task,1,subject012,,scenes,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,5270.247460099985
+ESQ,5271.66498510004,,Words_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5275.984610200045,,Words_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Two-Back Task-scenes
+ESQ,5275.986331099994,,Distracting_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5279.17016920005,,Distracting_response,4.100000000000017,Experience Sampling Questions,1,subject012,,Marker Started at 10,Two-Back Task-scenes
+ESQ,5279.170667900005,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5282.706752900034,,Deliberate_response,8.699999999999989,Experience Sampling Questions,1,subject012,,Marker Started at 2,Two-Back Task-scenes
+ESQ,5282.708424200071,,Other_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5286.092589800013,,Other_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 5,Two-Back Task-scenes
+ESQ,5286.093012299971,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5288.660147599992,,Knowledge_response,8.09999999999999,Experience Sampling Questions,1,subject012,,Marker Started at 4,Two-Back Task-scenes
+ESQ,5288.661821500049,,Past_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5290.863045300008,,Past_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Two-Back Task-scenes
+ESQ,5290.864651600015,,Emotion_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5294.799639099976,,Emotion_response,3.100000000000016,Experience Sampling Questions,1,subject012,,Marker Started at 10,Two-Back Task-scenes
+ESQ,5294.8012824000325,,Detailed_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5302.222260200069,,Detailed_response,7.9999999999999964,Experience Sampling Questions,1,subject012,,Marker Started at 7,Two-Back Task-scenes
+ESQ,5302.222663399996,,Problem_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5305.724774800008,,Problem_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Two-Back Task-scenes
+ESQ,5305.726390899974,,Future_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5309.6779635000275,,Future_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Two-Back Task-scenes
+ESQ,5309.679599200026,,Self_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5313.714220999973,,Self_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Two-Back Task-scenes
+ESQ,5313.715867300052,,Sounds_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5316.28423920006,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Two-Back Task-scenes
+ESQ,5316.285895899986,,Absorption_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5324.090237200027,,Absorption_response,8.200000000000003,Experience Sampling Questions,1,subject012,,Marker Started at 9,Two-Back Task-scenes
+ESQ,5324.091869600001,,Images_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5328.194138300023,,Images_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Two-Back Task-scenes
+ESQ,5328.195769199985,,Focus_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5330.877994399983,,Focus_response,8.999999999999996,Experience Sampling Questions,1,subject012,,Marker Started at 8,Two-Back Task-scenes
+ESQ,5330.879634000012,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-scenes
+ESQ,5334.598087799968,,Intrusive_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Two-Back Task-scenes
+EXPERIMENT DATA:,Two-Back Task
+Start Time,5334.619922199985
+2-back Task Start,5337.742697000038,,,,Two-Back Task,1,subject012,,faces,
+fixation cross,5337.76846260007,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5339.839071399998,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5339.839097699965,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5341.871248900075,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5341.871338200057,False,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5343.9211483000545,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5343.9211752000265,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5345.023828600068,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5345.023925699992,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5347.072362200008,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5347.072388999979,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5347.659023600048,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5347.659119899967,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5349.709881699993,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5349.70991179999,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5350.227372099995,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5350.227403600002,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5352.285329799983,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5352.285355500062,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5352.8465631,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5352.8466595000355,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5354.896356399986,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5354.896383600077,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5355.515190500068,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5355.515274300007,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5357.562914600014,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5357.562941499986,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5358.184103499982,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5358.184199100011,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5360.238441499998,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5360.238470799988,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5360.80247460003,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5360.802505800035,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5362.852480100002,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5362.852506699972,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5363.68868640007,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5363.688781099976,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5365.734802299994,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5365.734828400076,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5367.758333500009,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5367.7584005000535,False,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5369.803395700059,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5369.803423400037,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5370.677633300074,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5370.677734900033,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5372.719004000071,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5372.7190317000495,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5373.779403100023,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5373.779438300058,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5375.83213850006,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5375.832165500033,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5376.665588999982,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5376.665684100008,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5378.712705500075,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5378.712735300069,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5379.217755699996,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5379.217787500005,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5381.263192999992,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5381.263219500077,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5382.620297400048,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5382.62039200007,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5384.665203600074,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5384.665229000035,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5385.756346600014,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5385.756441300036,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5387.81328760006,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5387.8133143000305,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5388.65792040003,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5388.657951100031,False,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5390.706863000058,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5390.7068908000365,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5391.977967299987,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5391.978042999981,False,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5394.0366215000395,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5394.036648300011,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5394.7299615000375,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5394.730056500062,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5396.788466900005,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5396.7884935999755,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5397.398782700067,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5397.398877899977,True,,,Two-Back Task,1,subject012,,faces,
+2-back Task End,5399.416545600048,,,,Two-Back Task,1,subject012,,faces,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,5399.41993460001
+ESQ,5400.69033360004,,Past_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5404.353757100063,,Past_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Two-Back Task-faces
+ESQ,5404.354464899981,,Detailed_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5407.106025599991,,Detailed_response,8.999999999999993,Experience Sampling Questions,1,subject012,,Marker Started at 7,Two-Back Task-faces
+ESQ,5407.107575400034,,Absorption_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5410.207986099995,,Absorption_response,9.099999999999993,Experience Sampling Questions,1,subject012,,Marker Started at 7,Two-Back Task-faces
+ESQ,5410.209652899997,,Emotion_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5413.878017600044,,Emotion_response,2.300000000000001,Experience Sampling Questions,1,subject012,,Marker Started at 6,Two-Back Task-faces
+ESQ,5413.8787517000455,,Focus_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5416.779265900026,,Focus_response,8.899999999999988,Experience Sampling Questions,1,subject012,,Marker Started at 4,Two-Back Task-faces
+ESQ,5416.780930600013,,Words_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5419.132101700059,,Words_response,8.499999999999995,Experience Sampling Questions,1,subject012,,Marker Started at 7,Two-Back Task-faces
+ESQ,5419.13259100006,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5421.851234500064,,Knowledge_response,8.299999999999995,Experience Sampling Questions,1,subject012,,Marker Started at 7,Two-Back Task-faces
+ESQ,5421.85290399997,,Problem_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5424.686360500054,,Problem_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Two-Back Task-faces
+ESQ,5424.6880059000105,,Sounds_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5428.323339399998,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Two-Back Task-faces
+ESQ,5428.324966600048,,Self_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5432.560229000053,,Self_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Two-Back Task-faces
+ESQ,5432.561852300074,,Future_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5436.246318400023,,Future_response,8.899999999999986,Experience Sampling Questions,1,subject012,,Marker Started at 5,Two-Back Task-faces
+ESQ,5436.247964099981,,Other_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5439.1163314000005,,Other_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 4,Two-Back Task-faces
+ESQ,5439.116838200018,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5442.500327100046,,Deliberate_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 4,Two-Back Task-faces
+ESQ,5442.502259199973,,Images_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5445.220461899997,,Images_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 6,Two-Back Task-faces
+ESQ,5445.222381800064,,Distracting_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5449.256575300009,,Distracting_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Two-Back Task-faces
+ESQ,5449.256988400011,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5452.742191200028,,Intrusive_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Two-Back Task-faces
+EXPERIMENT DATA:,Two-Back Task
+Start Time,5452.759844199987
+2-back Task Start,5456.254724500002,,,,Two-Back Task,1,subject012,,faces,
+fixation cross,5456.280671900022,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5458.349143999978,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5458.349170800066,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5458.897674100008,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5458.8977087000385,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5460.951580099994,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5460.951607299969,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5461.5162565000355,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5461.51629160007,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5463.56895310001,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5463.56897979998,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5464.051563899964,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5464.051595499972,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5466.103401300032,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5466.10343160003,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5466.57080960006,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5466.570904199965,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5468.615792799974,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5468.615818400052,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5469.656659099972,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5469.656759400037,False,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5471.695759400027,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5471.695787000004,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5472.809011799982,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5472.8091073000105,False,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5474.865882700076,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5474.865908900043,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5475.594764600042,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5475.594837300014,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5477.656965099974,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5477.656995999976,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5478.162835999974,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5478.162867799983,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5480.234965900076,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5480.234995100065,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5481.699007400079,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5481.699040399981,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5483.741451599984,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5483.741477500065,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5484.518521800055,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5484.518638700014,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5486.5618560999865,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5486.561883400078,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5488.588418800035,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5488.588528800057,False,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5490.641731200041,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5490.641757400008,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5491.523509799968,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5491.523541199975,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5493.577973300009,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5493.577999899979,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5494.1762173000025,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5494.17631790007,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5496.229584500077,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5496.229611300048,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5496.878393199993,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5496.87849630008,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5498.930769999977,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5498.930797400069,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5500.113718000008,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5500.113749300013,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5502.170268999995,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5502.17029629997,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5502.783081199974,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5502.78317499999,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5504.82539230003,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5504.825418299995,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5505.368340900051,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5505.3684368999675,False,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5507.421971800039,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5507.421998900012,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5508.053394700051,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5508.053426500061,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5510.093235000037,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5510.093261400005,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5511.172552000033,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5511.172586300061,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5513.232428999967,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5513.232456100057,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5513.891235399991,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5513.891267400002,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5515.932146999985,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5515.932173600071,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5516.543909,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5516.544002400013,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5518.59068090003,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5518.590709500015,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5519.162786800065,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5519.162887000013,True,,,Two-Back Task,1,subject012,,faces,
+2-back Trial Start,5521.244494299986,,,,Two-Back Task,1,subject012,,faces,
+Choice presented,5521.244523699977,,,,Two-Back Task,1,subject012,,faces,
+Choice made,5521.798093200079,,,,Two-Back Task,1,subject012,,faces,
+2-back Trial End,5521.798189299996,True,,,Two-Back Task,1,subject012,,faces,
+2-back Task End,5523.815866400022,,,,Two-Back Task,1,subject012,,faces,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,5523.819051500061
+ESQ,5525.05113180005,,Detailed_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5528.769273800077,,Detailed_response,8.599999999999989,Experience Sampling Questions,1,subject012,,Marker Started at 3,Two-Back Task-faces
+ESQ,5528.77101180004,,Problem_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5532.406060000067,,Problem_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 4,Two-Back Task-faces
+ESQ,5532.406697100028,,Focus_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5535.775223199977,,Focus_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Two-Back Task-faces
+ESQ,5535.776879400015,,Words_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5540.695930700051,,Words_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Two-Back Task-faces
+ESQ,5540.697558299988,,Absorption_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5543.0303917999845,,Absorption_response,8.499999999999998,Experience Sampling Questions,1,subject012,,Marker Started at 8,Two-Back Task-faces
+ESQ,5543.032041199971,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5547.785498799989,,Knowledge_response,8.199999999999989,Experience Sampling Questions,1,subject012,,Marker Started at 5,Two-Back Task-faces
+ESQ,5547.787168900017,,Other_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5550.670348000014,,Other_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 4,Two-Back Task-faces
+ESQ,5550.671981899999,,Distracting_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5554.340268400032,,Distracting_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Two-Back Task-faces
+ESQ,5554.340777700068,,Images_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5557.025701000006,,Images_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 5,Two-Back Task-faces
+ESQ,5557.027339900029,,Emotion_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5561.1284305000445,,Emotion_response,3.300000000000002,Experience Sampling Questions,1,subject012,,Marker Started at 6,Two-Back Task-faces
+ESQ,5561.129413100076,,Sounds_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5565.916337699979,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Two-Back Task-faces
+ESQ,5565.917974799988,,Past_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5568.700446599978,,Past_response,7.699999999999993,Experience Sampling Questions,1,subject012,,Marker Started at 2,Two-Back Task-faces
+ESQ,5568.702091500047,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5572.588159000035,,Intrusive_response,2.999999999999998,Experience Sampling Questions,1,subject012,,Marker Started at 5,Two-Back Task-faces
+ESQ,5572.58968450001,,Future_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5579.410657500033,,Future_response,8.199999999999992,Experience Sampling Questions,1,subject012,,Marker Started at 2,Two-Back Task-faces
+ESQ,5579.4122857999755,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5582.462203399977,,Deliberate_response,8.79999999999999,Experience Sampling Questions,1,subject012,,Marker Started at 2,Two-Back Task-faces
+ESQ,5582.462631799979,,Self_start,,Experience Sampling Questions,1,subject012,,,Two-Back Task-faces
+ESQ,5588.700352800079,,Self_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 4,Two-Back Task-faces
+EXPERIMENT DATA:,Reading Task
+Start Time,5686.334269999992
+Reading start,5686.340589600033,,,,Reading Task,1,subject012,,,
+Reading trial start,5691.508335600025,,,,Reading Task,1,subject012,,"['Dollar', 'is the', 'currency', 'name for', 'more', 'than', 'twenty', 'countries,', 'while', 'the U.S.', 'dollar is', ""the world's"", 'primary', 'reserve', 'currency.']",
+Reading trial ended,5706.628441800014,,,,Reading Task,1,subject012,,,
+Reading trial start,5706.651204900001,,,,Reading Task,1,subject012,,"['The body', 'size of', 'snakes', 'has a major', 'influence', 'on their', 'eating', 'habits,', 'with large', 'pythons', 'being', 'able to', 'tackle', 'small', 'deer.']",
+Reading trial ended,5721.205975000048,,,,Reading Task,1,subject012,,,
+Reading trial start,5721.223901899997,,,,Reading Task,1,subject012,,"['In the', 'mid-1800s,', 'magazines', 'gained', 'popularity,', 'they were', 'general', 'interest to', 'begin with,', 'containing', 'news,', 'political', 'events,', 'and social', 'discussion.']",
+Reading trial ended,5735.7838868000545,,,,Reading Task,1,subject012,,,
+Reading trial start,5735.80157910008,,,,Reading Task,1,subject012,,"['Exposure', 'to', 'pesticides', 'may increase', ""a child's"", 'lifelong', 'cancer', 'risk,', 'as well as', 'harm his', 'or her', 'nervous', 'and', 'immune', 'systems.']",
+Reading trial ended,5750.362931300071,,,,Reading Task,1,subject012,,,
+Reading trial start,5750.376929600025,,,,Reading Task,1,subject012,,"['Some', 'bridges', 'are built', 'much', 'taller', 'than', 'necessary,', 'for example,', 'the moon', 'bridge', 'which is', 'often', 'found in', 'east-Asian', 'gardens.']",
+Reading trial ended,5765.492291799979,,,,Reading Task,1,subject012,,,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,5765.49657800002
+ESQ,5770.895610000007,,Distracting_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5775.88359480002,,Distracting_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Reading Task
+ESQ,5775.884063699981,,Past_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5779.586703400011,,Past_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Reading Task
+ESQ,5779.5883409000235,,Future_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5785.540415600059,,Future_response,8.499999999999995,Experience Sampling Questions,1,subject012,,Marker Started at 7,Reading Task
+ESQ,5785.541684600059,,Detailed_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5788.6439498000545,,Detailed_response,3.000000000000009,Experience Sampling Questions,1,subject012,,Marker Started at 8,Reading Task
+ESQ,5788.645605299971,,Absorption_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5797.9685512,,Absorption_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Reading Task
+ESQ,5797.970120300073,,Self_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5800.170365800033,,Self_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Reading Task
+ESQ,5800.172056999989,,Sounds_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5803.655940599972,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Reading Task
+ESQ,5803.65756750002,,Other_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5808.459741599974,,Other_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Reading Task
+ESQ,5808.46168800001,,Focus_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5812.296107099974,,Focus_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Reading Task
+ESQ,5812.297727899975,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5818.534413799993,,Deliberate_response,2.400000000000005,Experience Sampling Questions,1,subject012,,Marker Started at 7,Reading Task
+ESQ,5818.536070800037,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5822.037311800057,,Intrusive_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 7,Reading Task
+ESQ,5822.039269500063,,Words_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5829.2594473999925,,Words_response,3.2000000000000126,Experience Sampling Questions,1,subject012,,Marker Started at 9,Reading Task
+ESQ,5829.261108000064,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5834.714473200031,,Knowledge_response,8.000000000000004,Experience Sampling Questions,1,subject012,,Marker Started at 9,Reading Task
+ESQ,5834.716135800001,,Emotion_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5838.917461300036,,Emotion_response,2.4000000000000004,Experience Sampling Questions,1,subject012,,Marker Started at 2,Reading Task
+ESQ,5838.919103299966,,Problem_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5842.286748600076,,Problem_response,8.09999999999999,Experience Sampling Questions,1,subject012,,Marker Started at 3,Reading Task
+ESQ,5842.287539300043,,Images_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5846.806471699965,,Images_response,1.3000000000000118,Experience Sampling Questions,1,subject012,,Marker Started at 9,Reading Task
+EXPERIMENT DATA:,Reading Task
+Start Time,5846.8181565999985
+Reading start,5846.823362000054,,,,Reading Task,1,subject012,,,
+Reading trial start,5851.893938999972,,,,Reading Task,1,subject012,,"['Salt is', 'a naturally', 'occurring', 'constituent', 'in foods', 'such as', 'meats', 'and', 'vegetables,', 'it is', 'present', 'in', 'very', 'small', 'quantities.']",
+Reading trial ended,5866.455451200018,,,,Reading Task,1,subject012,,,
+Reading trial start,5866.4736118,,,,Reading Task,1,subject012,,"['Television', 'services', 'in some', 'countries', 'are', 'funded by', 'a licence,', 'so', 'advertising', 'plays a', 'lesser', 'role', 'or', 'no role', 'at all.']",
+Reading trial ended,5881.034344000043,,,,Reading Task,1,subject012,,,
+Reading trial start,5881.052514099982,,,,Reading Task,1,subject012,,"['Horses', 'can', 'perform a', 'number of', 'mental', 'challenges', 'that include', 'food', 'procurement', 'and', 'identification', 'of individuals', 'within', 'a social', 'system.']",
+Reading trial ended,5895.612461699988,,,,Reading Task,1,subject012,,,
+Reading trial start,5895.628085899982,,,,Reading Task,1,subject012,,"['During', 'the 17th', 'Century,', 'pipe', 'smoking', 'became a', 'new trend', 'among', 'the Dutch', 'youth,', 'specifically', 'upper and', 'middle', 'class', 'students.']",
+Reading trial ended,5910.758165800013,,,,Reading Task,1,subject012,,,
+Reading trial start,5910.7788946999935,,,,Reading Task,1,subject012,,"['Brain', 'tissue', 'consumes', 'a large', 'amount of', 'energy in', 'proportion to', 'its volume,', 'so large', 'brains', 'place', 'severe', 'metabolic', 'demands on', 'animals.']",
+Reading trial ended,5925.334919300047,,,,Reading Task,1,subject012,,,
+Reading trial start,5925.352960600052,,,,Reading Task,1,subject012,,"['Since', 'the early', '1900s,', 'coloured', 'scarves', 'with', 'tassles', 'have been', 'worn by', 'fans of', 'association', 'football', 'teams', 'across', 'the world.']",
+Reading trial ended,5939.914364999975,,,,Reading Task,1,subject012,,,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,5939.918798699975
+ESQ,5944.218311400036,,Detailed_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5947.153746500029,,Detailed_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Reading Task
+ESQ,5947.154456200078,,Images_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5951.790354500059,,Images_response,8.800000000000004,Experience Sampling Questions,1,subject012,,Marker Started at 7,Reading Task
+ESQ,5951.790953699965,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5954.459338100045,,Intrusive_response,8.899999999999986,Experience Sampling Questions,1,subject012,,Marker Started at 5,Reading Task
+ESQ,5954.461345400079,,Other_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5956.746239900007,,Other_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 7,Reading Task
+ESQ,5956.746805300005,,Future_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5960.514627899975,,Future_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 5,Reading Task
+ESQ,5960.516270100023,,Emotion_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5964.950551999966,,Emotion_response,2.800000000000005,Experience Sampling Questions,1,subject012,,Marker Started at 7,Reading Task
+ESQ,5964.952194600017,,Past_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5968.720480100019,,Past_response,8.29999999999999,Experience Sampling Questions,1,subject012,,Marker Started at 4,Reading Task
+ESQ,5968.721090900013,,Sounds_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5971.907040699967,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 6,Reading Task
+ESQ,5971.908691699966,,Self_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5975.0094375000335,,Self_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Reading Task
+ESQ,5975.010809600004,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5978.929356100038,,Deliberate_response,2.000000000000015,Experience Sampling Questions,1,subject012,,Marker Started at 10,Reading Task
+ESQ,5978.93099360005,,Absorption_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5985.16755220003,,Absorption_response,9.500000000000002,Experience Sampling Questions,1,subject012,,Marker Started at 10,Reading Task
+ESQ,5985.169195099967,,Problem_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5988.686799500021,,Problem_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Reading Task
+ESQ,5988.688728100038,,Words_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5992.974480299978,,Words_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 4,Reading Task
+ESQ,5992.97610249999,,Focus_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,5998.160598900053,,Focus_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 4,Reading Task
+ESQ,5998.162587300059,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6004.548704100074,,Knowledge_response,9.999999999999993,Experience Sampling Questions,1,subject012,,Marker Started at 8,Reading Task
+ESQ,6004.550637900014,,Distracting_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6007.768373199971,,Distracting_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Reading Task
+EXPERIMENT DATA:,Reading Task
+Start Time,6007.785237199976
+Reading start,6007.789560000063,,,,Reading Task,1,subject012,,,
+Reading trial start,6009.509863600018,,,,Reading Task,1,subject012,,"['Dolls', 'for girls', 'tend to', 'represent', 'feminine', 'traits and', 'come', 'with', 'accessories', 'such as', 'clothing,', 'kitchen', 'appliances,', 'furniture', 'and jewelry.']",
+Reading trial ended,6024.064541100059,,,,Reading Task,1,subject012,,,
+Reading trial start,6024.08289109997,,,,Reading Task,1,subject012,,"['In antiquity,', 'Indian', 'flags', 'were often', 'triangular', 'shaped', 'and', 'decorated', 'with', 'attachments', 'such as', ""yak's tail"", 'and', 'the state', 'umbrella.']",
+Reading trial ended,6038.643599900068,,,,Reading Task,1,subject012,,,
+Reading trial start,6038.661455100053,,,,Reading Task,1,subject012,,"['Ships', 'have been', 'important', 'contributors', 'to', 'human', 'migration', 'and', 'commerce,', 'which have', 'supported the', 'spread of', 'colonization', 'and slave', 'trade.']",
+Reading trial ended,6053.220923800021,,,,Reading Task,1,subject012,,,
+Reading trial start,6053.234259800054,,,,Reading Task,1,subject012,,"['Some', 'insects', 'damage', 'crops by', 'feeding', 'on', 'sap,', 'leaves,', 'fruits,', 'or wood,', 'and', 'they may', 'act as', 'disease', 'vectors.']",
+Reading trial ended,6067.783554099966,,,,Reading Task,1,subject012,,,
+Reading trial start,6067.801141400007,,,,Reading Task,1,subject012,,"['Salt is', 'a naturally', 'occurring', 'constituent', 'in foods', 'such as', 'meats', 'and', 'vegetables,', 'it is', 'present', 'in', 'very', 'small', 'quantities.']",
+Reading trial ended,6082.362115900032,,,,Reading Task,1,subject012,,,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,6082.363421999966
+ESQ,6083.645404000068,,Focus_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6087.398532500025,,Focus_response,9.899999999999983,Experience Sampling Questions,1,subject012,,Marker Started at 5,Reading Task
+ESQ,6087.400641000015,,Past_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6090.386254000012,,Past_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 6,Reading Task
+ESQ,6090.388190999976,,Emotion_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6093.470951800002,,Emotion_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 5,Reading Task
+ESQ,6093.4728553000605,,Absorption_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6096.673620400019,,Absorption_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Reading Task
+ESQ,6096.675552400062,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6099.893640900031,,Knowledge_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Reading Task
+ESQ,6099.895281800069,,Other_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6102.427911899984,,Other_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 7,Reading Task
+ESQ,6102.4295641999925,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6106.630524200038,,Deliberate_response,4.400000000000014,Experience Sampling Questions,1,subject012,,Marker Started at 9,Reading Task
+ESQ,6106.632162200054,,Images_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6109.516773300013,,Images_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Reading Task
+ESQ,6109.518683400005,,Sounds_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6113.436558400048,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Reading Task
+ESQ,6113.438488300075,,Self_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6119.007493100013,,Self_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Reading Task
+ESQ,6119.007901699981,,Distracting_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6122.893975200015,,Distracting_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 6,Reading Task
+ESQ,6122.894504199969,,Words_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6125.495556400041,,Words_response,9.899999999999984,Experience Sampling Questions,1,subject012,,Marker Started at 4,Reading Task
+ESQ,6125.4975045999745,,Detailed_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6131.950604100013,,Detailed_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Reading Task
+ESQ,6131.952234499971,,Problem_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6135.254711400019,,Problem_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 7,Reading Task
+ESQ,6135.2566274000565,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6139.874611800071,,Intrusive_response,7.30000000000001,Experience Sampling Questions,1,subject012,,Marker Started at 10,Reading Task
+ESQ,6139.876275400049,,Future_start,,Experience Sampling Questions,1,subject012,,,Reading Task
+ESQ,6142.310615699971,,Future_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Reading Task
+EXPERIMENT DATA:,Memory Task
+Start Time,6142.329916300019
+Memory Task Starting,6142.7117475999985,,,,Memory Task,1,subject012,,,
+Memory Prompt Shown,6156.514452800038,,,,Memory Task,1,subject012,,,
+Text Input Submitted,6164.480557200033,,,,Memory Task,1,subject012,,,
+Ready Check Started,6168.505100200069,,,,Memory Task,1,subject012,,,
+Ready Check Ended,6171.136517300038,,,,Memory Task,1,subject012,,,
+Blank Memory Recall Period Started,6191.150308400043,,,,Memory Task,1,subject012,,,
+Blank Memory Recall Period Ended,6192.152117499965,,,,Memory Task,1,subject012,,,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,6193.171005800017
+ESQ,6197.268688400043,,Other_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6200.756279399968,,Other_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 5,Memory Task
+ESQ,6200.758328999975,,Past_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6203.558504000073,,Past_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 5,Memory Task
+ESQ,6203.560427200049,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6206.31070380006,,Knowledge_response,8.599999999999989,Experience Sampling Questions,1,subject012,,Marker Started at 3,Memory Task
+ESQ,6206.312696299981,,Sounds_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6210.247189800022,,Sounds_response,8.099999999999996,Experience Sampling Questions,1,subject012,,Marker Started at 7,Memory Task
+ESQ,6210.248839800013,,Problem_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6214.066674800008,,Problem_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Memory Task
+ESQ,6214.0671528000385,,Words_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6218.370687199989,,Words_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Memory Task
+ESQ,6218.372694600024,,Self_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6221.005587500054,,Self_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Memory Task
+ESQ,6221.00721359998,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6224.274986700038,,Deliberate_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Memory Task
+ESQ,6224.276953699999,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6227.05965890002,,Intrusive_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Memory Task
+ESQ,6227.061327800038,,Emotion_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6229.812707200064,,Emotion_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Memory Task
+ESQ,6229.81441240001,,Distracting_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6236.017823099974,,Distracting_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Memory Task
+ESQ,6236.019768099999,,Future_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6240.070702900062,,Future_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 6,Memory Task
+ESQ,6240.072629500064,,Absorption_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6244.1405859000515,,Absorption_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 6,Memory Task
+ESQ,6244.141523799975,,Focus_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6249.745350499987,,Focus_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 4,Memory Task
+ESQ,6249.746979900054,,Images_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6253.1482421000255,,Images_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Memory Task
+ESQ,6253.150201300043,,Detailed_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6259.054491900024,,Detailed_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Memory Task
+EXPERIMENT DATA:,Memory Task
+Start Time,6259.064735800028
+Memory Task Starting,6259.4437521999935,,,,Memory Task,1,subject012,,,
+Memory Prompt Shown,6270.641502500046,,,,Memory Task,1,subject012,,,
+Text Input Submitted,6279.538432399975,,,,Memory Task,1,subject012,,,
+Ready Check Started,6283.561869299971,,,,Memory Task,1,subject012,,,
+Ready Check Ended,6286.027176000061,,,,Memory Task,1,subject012,,,
+Blank Memory Recall Period Started,6306.042766600032,,,,Memory Task,1,subject012,,,
+Blank Memory Recall Period Ended,6307.0586301999865,,,,Memory Task,1,subject012,,,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,6308.078050300013
+ESQ,6309.139808300068,,Detailed_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6313.012602700037,,Detailed_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Memory Task
+ESQ,6313.013630300062,,Sounds_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6315.914916699985,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 7,Memory Task
+ESQ,6315.9155835000565,,Self_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6318.5165560999885,,Self_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 6,Memory Task
+ESQ,6318.518514399999,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6321.185723199975,,Intrusive_response,7.199999999999993,Experience Sampling Questions,1,subject012,,Marker Started at 4,Memory Task
+ESQ,6321.186257199966,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6323.770737400046,,Knowledge_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 6,Memory Task
+ESQ,6323.772370800027,,Absorption_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6326.356566300034,,Absorption_response,9.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Memory Task
+ESQ,6326.358192000072,,Emotion_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6329.292712699971,,Emotion_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Memory Task
+ESQ,6329.293300600024,,Distracting_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6332.278047400061,,Distracting_response,2.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Memory Task
+ESQ,6332.279738500016,,Focus_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6335.146982799983,,Focus_response,9.599999999999994,Experience Sampling Questions,1,subject012,,Marker Started at 8,Memory Task
+ESQ,6335.148613800062,,Images_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6338.917824400007,,Images_response,9.99999999999999,Experience Sampling Questions,1,subject012,,Marker Started at 7,Memory Task
+ESQ,6338.919767000014,,Problem_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6342.602630499983,,Problem_response,1.3000000000000047,Experience Sampling Questions,1,subject012,,Marker Started at 7,Memory Task
+ESQ,6342.604594200035,,Words_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6345.420743800001,,Words_response,9.899999999999986,Experience Sampling Questions,1,subject012,,Marker Started at 6,Memory Task
+ESQ,6345.421428499976,,Future_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6352.242565599969,,Future_response,1.100000000000001,Experience Sampling Questions,1,subject012,,Marker Started at 6,Memory Task
+ESQ,6352.244299700018,,Past_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6356.130951700034,,Past_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 2,Memory Task
+ESQ,6356.132959400071,,Other_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6358.965082300012,,Other_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Memory Task
+ESQ,6358.967026200029,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6362.418642400065,,Deliberate_response,9.499999999999984,Experience Sampling Questions,1,subject012,,Marker Started at 5,Memory Task
+EXPERIMENT DATA:,Memory Task
+Start Time,6362.433844799991
+Memory Task Starting,6362.827405399992,,,,Memory Task,1,subject012,,,
+Memory Prompt Shown,6365.313455500058,,,,Memory Task,1,subject012,,,
+Text Input Submitted,6371.644924000022,,,,Memory Task,1,subject012,,,
+Ready Check Started,6375.67105990008,,,,Memory Task,1,subject012,,,
+Ready Check Ended,6376.800560000003,,,,Memory Task,1,subject012,,,
+Blank Memory Recall Period Started,6396.815024600015,,,,Memory Task,1,subject012,,,
+Blank Memory Recall Period Ended,6397.832599500078,,,,Memory Task,1,subject012,,,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,6398.851740700076
+ESQ,6400.451131100068,,Future_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6404.018636499997,,Future_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 7,Memory Task
+ESQ,6404.020390200079,,Distracting_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6407.422788899974,,Distracting_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 5,Memory Task
+ESQ,6407.424535099999,,Emotion_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6409.873649000074,,Emotion_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Memory Task
+ESQ,6409.875238000066,,Intrusive_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6413.792820099974,,Intrusive_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Memory Task
+ESQ,6413.793399899965,,Deliberate_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6416.5786147000035,,Deliberate_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Memory Task
+ESQ,6416.580259100068,,Problem_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6420.681315400056,,Problem_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Memory Task
+ESQ,6420.682137400028,,Self_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6423.70088410005,,Self_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 4,Memory Task
+ESQ,6423.701424299972,,Other_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6426.068949099979,,Other_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 7,Memory Task
+ESQ,6426.070906599984,,Absorption_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6429.155307600042,,Absorption_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 7,Memory Task
+ESQ,6429.156153699965,,Images_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6432.157964200014,,Images_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 9,Memory Task
+ESQ,6432.159607000067,,Detailed_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6435.493661200046,,Detailed_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Memory Task
+ESQ,6435.495294800028,,Past_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6438.395631800056,,Past_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Memory Task
+ESQ,6438.397220600047,,Knowledge_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6441.730803900049,,Knowledge_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 3,Memory Task
+ESQ,6441.732811199967,,Focus_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6444.750730699976,,Focus_response,10.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Memory Task
+ESQ,6444.752726500039,,Sounds_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6449.187939799973,,Sounds_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 8,Memory Task
+ESQ,6449.189579800004,,Words_start,,Experience Sampling Questions,1,subject012,,,Memory Task
+ESQ,6453.709616200067,,Words_response,1.0,Experience Sampling Questions,1,subject012,,Marker Started at 10,Memory Task
