@@ -121,11 +121,14 @@ def sortingfunction(exp,row,resps):
     if exp == "Finger Tapping Task": #### NO RESPONSE TIME
         print(row)
         if row[1] != "":    
-            if row[0].split(" ",2)[3] == "Trial Start":
-                prevtime = float(row[1])
-            elif row[0].split(" ",2)[3] == "Trial End":
-                resptime = float(row[1]) - prevtime  
-                resps[exp]["Response Time"].append(resptime)
+            try:
+                if row[0].split(" ",2)[2] == "Trial Start":
+                    prevtime = float(row[1])
+                elif row[0].split(" ",2)[2] == "Trial End":
+                    resptime = float(row[1]) - prevtime  
+                    resps[exp]["Response Time"].append(resptime)
+            except:
+                pass
         if row[0] == 'Finger Tapping Trial End':
             if row[2].upper() == "TRUE":
                 resps[exp]["Accuracy"].append(True)
@@ -135,7 +138,23 @@ def sortingfunction(exp,row,resps):
                 return 1/0
         # Collect response time, % correct
         pass
-    if exp == "Two-Back Task": #DONT HAVE THE CORRECT TRUE/FALSE ON TRIALS
+    if exp == "Two-Back Task-faces": #DONT HAVE THE CORRECT TRUE/FALSE ON TRIALS
+        print(row)
+        if row[0] == "Choice presented":
+            prevtime = float(row[1])
+        elif row[0] == "2-back Trial End":
+            resptime = float(row[1]) - prevtime  
+            resps[exp]["Response Time"].append(resptime)
+        # Collect response time, % correct
+        if row[0] == "2-back Trial End":
+            if row[2].upper() == "TRUE":
+                resps[exp]["Accuracy"].append(True)
+            elif row[2].upper() == "FALSE":
+                resps[exp]["Accuracy"].append(False)
+            else:
+                return 1/0
+        pass
+    if exp == "Two-Back Task-scenes": #DONT HAVE THE CORRECT TRUE/FALSE ON TRIALS
         print(row)
         if row[0] == "Choice presented":
             prevtime = float(row[1])
@@ -350,6 +369,10 @@ for file in os.listdir("Tasks/log_file"):
                     enum +=1
                     if ect == 0:
                         task_name = row[10]
+                        if task_name == "Movie Task-Movie Task-bridge":
+                            task_name = "Movie Task-bridge"
+                        if task_name == "Movie Task-Movie Task-incept":
+                            task_name = "Movie Task-incept"
                         line_dict["Task_name"] = task_name
                         ect = 1
                     if task_name == row[10]:
@@ -399,7 +422,10 @@ for file in os.listdir("Tasks/log_file"):
                 elif row[0] == "Start Time":
                     ready = True
                 elif ready == True:
-                    sortingfunction(expdict["Experiment"],row,resps)  
+                    if expdict["Experiment"] == 'Two-Back Task':
+                        sortingfunction(expdict["Experiment"] + "-" + row[9],row,resps)  
+                    else:
+                        sortingfunction(expdict["Experiment"],row,resps)  
                     
                 print(row)
         with open("Analysis/accuracy.csv","a",newline="") as f:
