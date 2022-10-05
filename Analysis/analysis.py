@@ -23,14 +23,14 @@ with open("Analysis/accuracy.csv","a") as f:
         }
     writer = csv.writer(f)
     writer.writerow(newdict)
-with open("C:/Users/Ian/Documents/Task-Battery/Tasks/taskScripts/resources/Self_Task/Self_Stimuli.csv",'r') as f:
+with open("Tasks/taskScripts/resources/Self_Task/Self_Stimuli.csv",'r') as f:
     reader = csv.reader(f)
     for e,row in enumerate(reader):
         if e == 0:
             continue
         sentimentdict.update({row[6]:row[8]})
         print(row)
-with open("C:/Users/Ian/Documents/Task-Battery/Tasks/taskScripts/resources/Other_Task/Other_Stimuli.csv",'r') as f:
+with open("Tasks/taskScripts/resources/Other_Task/Other_Stimuli.csv",'r') as f:
     reader = csv.reader(f)
     for e,row in enumerate(reader):
         if e == 0:
