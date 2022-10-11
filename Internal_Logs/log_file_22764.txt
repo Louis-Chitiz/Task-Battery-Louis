@@ -1,0 +1,6 @@
+pygame 2.1.2 (SDL 2.0.18, Python 3.6.13)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+4.8412 	WARNING 	Speech-to-text recognition module not available (use command `pip install SpeechRecognition` to get it. Transcription will be unavailable.
+4.8790 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+2320.1748 	WARNING 	Monitor specification not found. Creating a temporary one...
+2320.1812 	WARNING 	User requested fullscreen with size [1440  960], but screen is actually [1920, 1080]. Using actual size

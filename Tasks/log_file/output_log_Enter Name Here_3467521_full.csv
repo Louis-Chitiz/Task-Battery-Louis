@@ -1,0 +1,15 @@
+METADATA:
+Block Runtime,Experiment Seed,Subject
+15,3467521,Enter Name Here
+Time after setup,3.7071794999974372
+Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+EXPERIMENT DATA:,Movie Task
+Start Time,6.733181599996897
+Movie Task Start,6.733230999998341,,,,Movie Task,1,3467521,,,
+Movie Init,7.300174599997263,,,,Movie Task,1,3467521,,,
+Movie Start,7.30021349999879,,,,Movie Task,1,3467521,,,
+Movie End,18.87082339999688,,,,Movie Task,1,3467521,,,
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,18.900897599996824
+ESQ,59.78673509999862,,Words_start,,Experience Sampling Questions,1,3467521,,,Movie Task
+ESQ,61.22456489999968,,Words_response,5.0,Experience Sampling Questions,1,3467521,,Marker Started at 5,Movie Task

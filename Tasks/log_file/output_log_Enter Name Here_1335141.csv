@@ -1,0 +1,49 @@
+METADATA:
+Block Runtime,Experiment Seed,Subject
+15,1335141,Enter Name Here
+Time after setup,6.780464999988908
+Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+ 
+Runtime Mod,-13
+EXPERIMENT DATA:,One-Back Task
+Start Time,1184.5293817000056
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,1188.9287837999873
+ESQ,1192.4921241999837,,Modality_response,3.0,Experience Sampling Questions,1,1335141,,Marker Started at 3,One-Back Task
+ESQ,1193.521175700007,,Deliberate_response,5.0,Experience Sampling Questions,1,1335141,,Marker Started at 5,One-Back Task
+ESQ,1194.5641800999874,,Focus_response,10.0,Experience Sampling Questions,1,1335141,,Marker Started at 10,One-Back Task
+ESQ,1195.5901567999972,,Problem_response,4.0,Experience Sampling Questions,1,1335141,,Marker Started at 4,One-Back Task
+ESQ,1196.626198699989,,Emotion_response,4.0,Experience Sampling Questions,1,1335141,,Marker Started at 4,One-Back Task
+ESQ,1197.65223409998,,Distracting_response,8.0,Experience Sampling Questions,1,1335141,,Marker Started at 8,One-Back Task
+ESQ,1198.6732020000054,,Future_response,9.0,Experience Sampling Questions,1,1335141,,Marker Started at 9,One-Back Task
+ESQ,1199.697155300004,,Past_response,10.0,Experience Sampling Questions,1,1335141,,Marker Started at 10,One-Back Task
+ESQ,1200.738198499981,,Knowledge_response,8.0,Experience Sampling Questions,1,1335141,,Marker Started at 8,One-Back Task
+ESQ,1207.4722240999981,,Intrusive_response,3.0,Experience Sampling Questions,1,1335141,,Marker Started at 3,One-Back Task
+ESQ,1208.4932059999846,,Absorption_response,8.0,Experience Sampling Questions,1,1335141,,Marker Started at 8,One-Back Task
+ESQ,1209.5142106999992,,Detailed_response,6.0,Experience Sampling Questions,1,1335141,,Marker Started at 6,One-Back Task
+ESQ,1210.5351794000017,,Self_response,4.0,Experience Sampling Questions,1,1335141,,Marker Started at 4,One-Back Task
+ESQ,1211.556226899993,,Other_response,9.0,Experience Sampling Questions,1,1335141,,Marker Started at 9,One-Back Task
+ 
+Runtime Mod,-10
+EXPERIMENT DATA:,One-Back Task
+Start Time,1211.573500700004
+EXPERIMENT DATA:,Experience Sampling Questions
+Start Time,1219.2403761000023
+ESQ,1230.1041776000056,,Detailed_response,10.0,Experience Sampling Questions,1,1335141,,Marker Started at 10,One-Back Task
+ESQ,1231.1331770999823,,Deliberate_response,6.0,Experience Sampling Questions,1,1335141,,Marker Started at 6,One-Back Task
+ESQ,1232.1611405999865,,Intrusive_response,10.0,Experience Sampling Questions,1,1335141,,Marker Started at 10,One-Back Task
+ESQ,1233.1812247000053,,Other_response,10.0,Experience Sampling Questions,1,1335141,,Marker Started at 10,One-Back Task
+ESQ,1234.2111145999806,,Focus_response,10.0,Experience Sampling Questions,1,1335141,,Marker Started at 10,One-Back Task
+ESQ,1235.2441613999836,,Knowledge_response,4.0,Experience Sampling Questions,1,1335141,,Marker Started at 4,One-Back Task
+ESQ,1236.2722117999801,,Problem_response,2.0,Experience Sampling Questions,1,1335141,,Marker Started at 2,One-Back Task
+ESQ,1237.2931859999953,,Self_response,10.0,Experience Sampling Questions,1,1335141,,Marker Started at 10,One-Back Task
+ESQ,1238.3141156999918,,Past_response,9.0,Experience Sampling Questions,1,1335141,,Marker Started at 9,One-Back Task
+ESQ,1239.3341856999905,,Absorption_response,3.0,Experience Sampling Questions,1,1335141,,Marker Started at 3,One-Back Task
+ESQ,1240.3551749000035,,Future_response,7.0,Experience Sampling Questions,1,1335141,,Marker Started at 7,One-Back Task
+ESQ,1241.3832015999942,,Distracting_response,8.0,Experience Sampling Questions,1,1335141,,Marker Started at 8,One-Back Task
+ESQ,1242.4172036999953,,Emotion_response,10.0,Experience Sampling Questions,1,1335141,,Marker Started at 10,One-Back Task
+ESQ,1243.4471774999984,,Modality_response,8.0,Experience Sampling Questions,1,1335141,,Marker Started at 8,One-Back Task
+ 
+Runtime Mod,8
+EXPERIMENT DATA:,One-Back Task
+Start Time,1243.4618439000042
