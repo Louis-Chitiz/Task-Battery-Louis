@@ -10,7 +10,7 @@ if os.path.exists("Analysis/accuracy.csv"):
     os.remove("Analysis/accuracy.csv")
 with open("Analysis/accuracy.csv","a") as f:
     newdict = {"Subject":None,"Experience Sampling Questions Response Time":None,
-        "GoNoGo Task Response Time":None, "GoNoGo Task Accuracy":None,
+        "GoNoGo Task Response Time":None, "Go Task Accuracy":None,"NoGo Task Accuracy":None,
         "Finger Tapping Task Response Time":None, "Finger Tapping Task Accuracy":None,
         "Two-Back Task-faces Response Time":None, "Two-Back Task-faces Accuracy":None,
         "Two-Back Task-scenes Response Time":None, "Two-Back Task-scenes Accuracy":None,
@@ -104,16 +104,16 @@ def sortingfunction(exp,row,resps):
             if row[2] != '':
                 if row[2] == 'noResponse':
                     if row[9] == 'Type: Go':
-                        resps[exp]["Accuracy"].append(False)
+                        resps[exp]["Accuracy - Go"].append(False)
                 if row[2].upper() == 'FALSE':
                     if row[9] == 'Type: Go':
-                        resps[exp]["Accuracy"].append(True)
+                        resps[exp]["Accuracy - Go"].append(True)
                 if row[2].upper() == 'FALSE':
                     if row[9] == 'Type: NoGo':
-                        resps[exp]["Accuracy"].append(False)
+                        resps[exp]["Accuracy - NoGo"].append(False)
                 if row[2].upper() == 'TRUE':
                     if row[9] == 'Type: NoGo':
-                        resps[exp]["Accuracy"].append(True)
+                        resps[exp]["Accuracy - NoGo"].append(True)
         except Exception as e:
             print(e)
             pass
@@ -320,7 +320,7 @@ for file in os.listdir("Tasks/log_file"):
     
     ftemp = file.split('.')[0]
     resps = {"Experience Sampling Questions":{"Response Time":[]},
-             "GoNoGo Task":{"Response Time":[], "Accuracy":[]},
+             "GoNoGo Task":{"Response Time":[], "Accuracy - Go":[],"Accuracy - NoGo":[]},
              "Finger Tapping Task":{"Response Time":[], "Accuracy":[]},
              "Two-Back Task-faces":{"Response Time":[], "Accuracy":[]},
              "Two-Back Task-scenes":{"Response Time":[], "Accuracy":[]},
@@ -430,7 +430,7 @@ for file in os.listdir("Tasks/log_file"):
                 print(row)
         with open("Analysis/accuracy.csv","a",newline="") as f:
             newdict = {"Subject":resps['Subject'],"Experience Sampling Questions Response Time":np.mean(resps['Experience Sampling Questions']['Response Time']),
-             "GoNoGo Task Response Time":np.mean(resps['GoNoGo Task']['Response Time']), "GoNoGo Task Accuracy":(resps['GoNoGo Task']['Accuracy'].count(True)/len(resps['GoNoGo Task']['Accuracy'])),
+             "GoNoGo Task Response Time":np.mean(resps['GoNoGo Task']['Response Time']), "NoGo Task Accuracy":(resps['GoNoGo Task']['Accuracy - NoGo'].count(True)/len(resps['GoNoGo Task']['Accuracy - NoGo'])), "Go Task Accuracy":(resps['GoNoGo Task']['Accuracy - Go'].count(True)/len(resps['GoNoGo Task']['Accuracy - Go'])),
              "Finger Tapping Task Response Time":np.mean(resps['Finger Tapping Task']['Response Time']), "Finger Tapping Task Accuracy":(resps['Finger Tapping Task']['Accuracy'].count(True)/len(resps['Finger Tapping Task']['Accuracy'])),
              "Two-Back Task-faces Response Time":np.mean(resps['Two-Back Task-faces']['Response Time']), "Two-Back Task-faces Accuracy":(resps['Two-Back Task-faces']['Accuracy'].count(True)/len(resps['Two-Back Task-faces']['Accuracy'])),
              "Two-Back Task-scenes Response Time":np.mean(resps['Two-Back Task-scenes']['Response Time']), "Two-Back Task-scenes Accuracy":(resps['Two-Back Task-scenes']['Accuracy'].count(True)/len(resps['Two-Back Task-scenes']['Accuracy'])),
