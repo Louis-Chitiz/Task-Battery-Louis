@@ -41,6 +41,7 @@ file_main['level_0'] = file_main['level_0'].apply(func)
 
 file_main = file_main.rename({"level_0":"Task","0_x":"Response Time","0_y":"Accuracy",0:"Sentiment"},axis=1)
 
+file_main.to_csv("Analysis/outputforlewwy.csv")
 
 
 print('e')
