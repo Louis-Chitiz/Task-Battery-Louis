@@ -6,6 +6,7 @@ os.chdir(".")
 graddict = {}
 global sentimentdict
 sentimentdict = {}
+
 if os.path.exists("Analysis/accuracy.csv"):
     os.remove("Analysis/accuracy.csv")
 with open("Analysis/accuracy.csv","a") as f:
@@ -23,6 +24,8 @@ with open("Analysis/accuracy.csv","a") as f:
         }
     writer = csv.writer(f)
     writer.writerow(newdict)
+
+
 with open("Tasks/taskScripts/resources/Self_Task/Self_Stimuli.csv",'r') as f:
     reader = csv.reader(f)
     for e,row in enumerate(reader):
@@ -30,6 +33,7 @@ with open("Tasks/taskScripts/resources/Self_Task/Self_Stimuli.csv",'r') as f:
             continue
         sentimentdict.update({row[6]:row[8]})
         print(row)
+
 with open("Tasks/taskScripts/resources/Other_Task/Other_Stimuli.csv",'r') as f:
     reader = csv.reader(f)
     for e,row in enumerate(reader):
@@ -37,6 +41,7 @@ with open("Tasks/taskScripts/resources/Other_Task/Other_Stimuli.csv",'r') as f:
             continue
         sentimentdict.update({row[6]:row[8]})
         print(row)
+
 with open('Analysis/coords.csv','r') as ft:
     rd = csv.reader(ft)
     for e,row in enumerate(rd):
@@ -44,6 +49,8 @@ with open('Analysis/coords.csv','r') as ft:
             continue
         graddict.update({row[0]:[float(row[1]),float(row[2]),float(row[3])]})
         print(row)
+
+
 line_dict= {"Task_name":None,
         "Participant #":None,
         "Runtime_mod":None,
@@ -67,11 +74,17 @@ line_dict= {"Task_name":None,
         "Gradient 2":None,
         "Gradient 3":None
         }
+
 if os.path.exists(os.path.join(os.getcwd(),"Analysis/output.csv")):
         os.remove(os.path.join(os.getcwd(),"Analysis/output.csv"))
+
+
 with open(os.path.join(os.getcwd(),"Analysis/output.csv"), 'a', newline="") as outf:
     wr = csv.writer(outf)
     wr.writerow(list(line_dict.keys()))
+
+
+
 def sortingfunction(exp,row,resps):
     global prevtime
     global en
@@ -316,6 +329,9 @@ def sortingfunction(exp,row,resps):
     
         #print("e")    
     pass
+
+
+
 for file in os.listdir("Tasks/log_file"):
     
     ftemp = file.split('.')[0]
@@ -331,6 +347,7 @@ for file in os.listdir("Tasks/log_file"):
              "Friend Task":{"Response Time":[], "Sentiment":[]},
              "You Task":{"Response Time":[], "Sentiment":[]}
              }
+
     if not 'full' in ftemp.split('_'):
         line_dict= {"Task_name":None,
         "Participant #":None,
@@ -355,6 +372,7 @@ for file in os.listdir("Tasks/log_file"):
         "Gradient 2":None,
         "Gradient 3":None
         }
+
         _,_,subject,seed = ftemp.split("_")
         line_dict["Participant #"] = subject
         
@@ -429,7 +447,8 @@ for file in os.listdir("Tasks/log_file"):
                     
                 print(row)
         with open("Analysis/accuracy.csv","a",newline="") as f:
-            newdict = {"Subject":resps['Subject'],"Experience Sampling Questions Response Time":np.mean(resps['Experience Sampling Questions']['Response Time']),
+            newdict = {"Subject":resps['Subject'],
+             "Experience Sampling Questions Response Time":np.mean(resps['Experience Sampling Questions']['Response Time']),
              "GoNoGo Task Response Time":np.mean(resps['GoNoGo Task']['Response Time']), "NoGo Task Accuracy":(resps['GoNoGo Task']['Accuracy - NoGo'].count(True)/len(resps['GoNoGo Task']['Accuracy - NoGo'])), "Go Task Accuracy":(resps['GoNoGo Task']['Accuracy - Go'].count(True)/len(resps['GoNoGo Task']['Accuracy - Go'])),
              "Finger Tapping Task Response Time":np.mean(resps['Finger Tapping Task']['Response Time']), "Finger Tapping Task Accuracy":(resps['Finger Tapping Task']['Accuracy'].count(True)/len(resps['Finger Tapping Task']['Accuracy'])),
              "Two-Back Task-faces Response Time":np.mean(resps['Two-Back Task-faces']['Response Time']), "Two-Back Task-faces Accuracy":(resps['Two-Back Task-faces']['Accuracy'].count(True)/len(resps['Two-Back Task-faces']['Accuracy'])),
