@@ -288,7 +288,7 @@ def runexp(filename, timer, win, writer, resultdict, runtime,dfile,seed):
     # for thisComponent in TriggerComponents:
     #     if hasattr(thisComponent, "setAutoDraw"):
     #         thisComponent.setAutoDraw(False)
-    resultdict['Timepoint'], resultdict['Time'] = 'Finger Tapping Start', timer.getTime()
+    resultdict['Timepoint'], resultdict['Time'] = 'Finger Tapping Start', text1.tStartRefresh
     writer.writerow(resultdict)
     resultdict['Timepoint'], resultdict['Time'] = None,None
     thisExp.addData('text.started', text1.tStartRefresh)
@@ -330,7 +330,7 @@ def runexp(filename, timer, win, writer, resultdict, runtime,dfile,seed):
     trialtimer = core.MonotonicClock()
     for thisTrial in trials:
         if trialtimer.getTime() <= runtime:
-            resultdict['Timepoint'], resultdict['Time'] = 'Finger Tapping Block Start', timer.getTime()
+            resultdict['Timepoint'], resultdict['Time'] = 'Finger Tapping Block Start', text1.tStartRefresh
             writer.writerow(resultdict)
             resultdict['Timepoint'], resultdict['Time'] = None,None
             currentLoop = trials
@@ -490,7 +490,7 @@ def runexp(filename, timer, win, writer, resultdict, runtime,dfile,seed):
                         waitOnFlip = True
                         win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
                         win.callOnFlip(key_resp.clearEvents, eventType='keyboard')
-                        resultdict['Timepoint'], resultdict['Time'] = 'Finger Tapping Trial Start', timer.getTime()
+                        resultdict['Timepoint'], resultdict['Time'] = 'Finger Tapping Trial Start', text1.tStartRefresh
                         writer.writerow(resultdict)
                         resultdict['Timepoint'], resultdict['Time'] = None,None  # clear events on next screen flip
                     if key_resp.status == STARTED:
@@ -545,7 +545,7 @@ def runexp(filename, timer, win, writer, resultdict, runtime,dfile,seed):
                 trials_2.addData('key_resp.started', key_resp.tStartRefresh)
                 trials_2.addData('key_resp.stopped', key_resp.tStopRefresh)
                 
-                resultdict['Timepoint'], resultdict['Time'], resultdict['Is_correct'] = 'Finger Tapping Trial End', timer.getTime(), iscorrect
+                resultdict['Timepoint'], resultdict['Time'], resultdict['Is_correct'] = 'Finger Tapping Trial End', text1.tStopRefresh, iscorrect
                 writer.writerow(resultdict)
                 resultdict['Timepoint'], resultdict['Time'], resultdict['Is_correct'] = None,None,None
                 
