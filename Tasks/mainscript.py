@@ -415,6 +415,7 @@ if __name__ == "__main__":
         movieTask4 = task(taskScripts.movieTask, datafile, 4,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 4)
         # Defining task GROUPS (groups will always be shown together, preceded by an instruction screen)
         
+<<<<<<< Updated upstream
         friendgroup = [friendTask,friendTask2,friendTask3]
         yougroup = [youTask,youTask2,youTask3]
         gonogogroup = [gonogoTask,gonogoTask2,gonogoTask3]
@@ -428,10 +429,23 @@ if __name__ == "__main__":
         twobackfacegroup = [twobackTaskfaces1,twobackTaskfaces2]
         twobackscenegroup = [twobackTaskscenes1,twobackTaskscenes2]
         moviegroup = [movieTask1,movieTask2]
+=======
+        self_other = taskgroup([[friendTask,friendTask2,friendTask3],[youTask,youTask2,youTask3]],"resources/group_inst/self_other.txt" )
+        gonogo_fingtap = taskgroup([[gonogoTask,gonogoTask2,gonogoTask3],[fingertapTask,fingertapTask2,fingertapTask3]],"resources/group_inst/gonogo_fingtap.txt")
+        reading_memory = taskgroup([[readingTask,readingTask2,readingTask3],[memTask,memTask2,memTask3]],"resources/group_inst/reading_memory.txt")
+        oneback_zeroback = taskgroup([[zerobackTask,zerobackTask2,zerobackTask3],[onebackTask,onebackTask2,onebackTask3]],"resources/group_inst/oneback_zeroback.txt")
+        ezmath_hrdmath = taskgroup([[easymathTask1,easymathTask2,easymathTask3],[hardmathTask1,hardmathTask2,hardmathTask3]],"resources/group_inst/ezmath_hrdmath.txt")
+        twobackTask_grp = taskgroup([[twobackTaskfaces1,twobackTaskfaces2],[twobackTaskscenes1,twobackTaskscenes2]],"resources/group_inst/ezmath_hrdmath.txt")
+        movie_main = taskgroup([[movieTask1,movieTask2]],"resources/group_inst/movie_main.txt")
+        gonogo = taskgroup([[gonogoTask,gonogoTask2,gonogoTask3]],"resources/group_inst/gonogo_fingtap.txt")
+        
+        
+>>>>>>> Stashed changes
 
         #if config['randomize_task']:
         #        fulltaskgroups = random.sample(list(allgroups),config['num_task_in_subset'])
 
+<<<<<<< Updated upstream
         #fulltaskgroups_ = {x:allgroups[x] if x in fulltaskgroups else None for x in list(allgroups.keys())}
 
 
@@ -443,6 +457,11 @@ if __name__ == "__main__":
         ezmath_hrdmath = taskgroup([ezmathgroup,hardmathgroup],"resources/group_inst/ezmath_hrdmath.txt")
         twobackTask_grp = taskgroup([twobackfacegroup,twobackscenegroup],"resources/group_inst/ezmath_hrdmath.txt")
         movie_main = taskgroup([moviegroup],"resources/group_inst/movie_main.txt")
+=======
+        fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main,twobackTask_grp]
+        fulltasklist = [gonogo]
+     
+>>>>>>> Stashed changes
 
  
         fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main,twobackTask_grp]
