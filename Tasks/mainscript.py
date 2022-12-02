@@ -2,12 +2,13 @@
 # Main script written by Ian Goodall-Halliwell. Subscripts are individually credited. Many have been extensively modified, for better or for worse (probably for worse o__o ).
 
 
-from numpy import full
+
 from psychopy import core, visual, gui, event
-import psychopy
+
 import time
 import csv
-import pickle as pkl
+
+import yaml
 #from Tasks.taskScripts import memoryTask
 import taskScripts
 import os
@@ -292,6 +293,8 @@ class taskgroup(taskbattery,metadatacollection):
                 
         def run(self):
                 for taskgrp in self.tasks:
+                        if taskgrp == None:
+                                continue
                         for task in taskgrp:
                                 print("Now initializing {}".format(task.name))
                                 task.initvers()
@@ -330,7 +333,8 @@ class taskgroup(taskbattery,metadatacollection):
 
 if __name__ == "__main__":
         
-
+        with open(os.path.join(os.pardir, 'config.yaml'),'r') as f:
+                config = yaml.safe_load(f)
         # Info Dict
         INFO = {
                         'Experiment Seed': random.randint(1, 9999999),  
@@ -411,22 +415,41 @@ if __name__ == "__main__":
         movieTask4 = task(taskScripts.movieTask, datafile, 4,"Movie Task",  metacoll.sbINFO.data, int(metacoll.INFO['Block Runtime']),'resources//Movie_Task//csv//sorted_filmList.csv', 4)
         # Defining task GROUPS (groups will always be shown together, preceded by an instruction screen)
         
-        self_other = taskgroup([[friendTask,friendTask2,friendTask3],[youTask,youTask2,youTask3]],"resources/group_inst/self_other.txt" )
-        gonogo_fingtap = taskgroup([[gonogoTask,gonogoTask2,gonogoTask3],[fingertapTask,fingertapTask2,fingertapTask3]],"resources/group_inst/gonogo_fingtap.txt")
-        reading_memory = taskgroup([[readingTask,readingTask2,readingTask3],[memTask,memTask2,memTask3]],"resources/group_inst/reading_memory.txt")
-        oneback_zeroback = taskgroup([[zerobackTask,zerobackTask2,zerobackTask3],[onebackTask,onebackTask2,onebackTask3]],"resources/group_inst/oneback_zeroback.txt")
-        ezmath_hrdmath = taskgroup([[easymathTask1,easymathTask2,easymathTask3],[hardmathTask1,hardmathTask2,hardmathTask3]],"resources/group_inst/ezmath_hrdmath.txt")
-        twobackTask_grp = taskgroup([[twobackTaskfaces1,twobackTaskfaces2],[twobackTaskscenes1,twobackTaskscenes2]],"resources/group_inst/ezmath_hrdmath.txt")
-        movie_main = taskgroup([[movieTask1,movieTask2]],"resources/group_inst/movie_main.txt")
-        
-        
-        
+        friendgroup = [friendTask,friendTask2,friendTask3]
+        yougroup = [youTask,youTask2,youTask3]
+        gonogogroup = [gonogoTask,gonogoTask2,gonogoTask3]
+        fingertapgroup = [fingertapTask,fingertapTask2,fingertapTask3]
+        readinggroup = [readingTask,readingTask2,readingTask3]
+        memorygroup = [memTask,memTask2,memTask3]
+        onebackgroup = [onebackTask,onebackTask2,onebackTask3]
+        zerobackgroup = [zerobackTask,zerobackTask2,zerobackTask3]
+        ezmathgroup = [easymathTask1,easymathTask2,easymathTask3]
+        hardmathgroup = [hardmathTask1,hardmathTask2,hardmathTask3]
+        twobackfacegroup = [twobackTaskfaces1,twobackTaskfaces2]
+        twobackscenegroup = [twobackTaskscenes1,twobackTaskscenes2]
+        moviegroup = [movieTask1,movieTask2]
+
+        #if config['randomize_task']:
+        #        fulltaskgroups = random.sample(list(allgroups),config['num_task_in_subset'])
+
+        #fulltaskgroups_ = {x:allgroups[x] if x in fulltaskgroups else None for x in list(allgroups.keys())}
 
 
+        
+        self_other = taskgroup([friendgroup,yougroup],"resources/group_inst/self_other.txt" )
+        gonogo_fingtap = taskgroup([gonogogroup,fingertapgroup],"resources/group_inst/gonogo_fingtap.txt")
+        reading_memory = taskgroup([readinggroup,memorygroup],"resources/group_inst/reading_memory.txt")
+        oneback_zeroback = taskgroup([zerobackgroup,onebackgroup],"resources/group_inst/oneback_zeroback.txt")
+        ezmath_hrdmath = taskgroup([ezmathgroup,hardmathgroup],"resources/group_inst/ezmath_hrdmath.txt")
+        twobackTask_grp = taskgroup([twobackfacegroup,twobackscenegroup],"resources/group_inst/ezmath_hrdmath.txt")
+        movie_main = taskgroup([moviegroup],"resources/group_inst/movie_main.txt")
+
+ 
         fulltasklist = [self_other,gonogo_fingtap,reading_memory,oneback_zeroback,ezmath_hrdmath,movie_main,twobackTask_grp]
-  
-     
-
+        
+        if config['randomize_task']:
+                fulltasklist = random.sample(list(fulltasklist),config['num_task_in_subset'])
+        
         
         # Shuffles the order of the tasks in taskgroups
         for enum, blk in enumerate(fulltasklist):
