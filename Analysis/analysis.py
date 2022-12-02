@@ -383,24 +383,32 @@ for file in os.listdir("Tasks/log_file"):
                 
                 if row[0] == 'Runtime Mod':
                     line_dict["Runtime_mod"] = row[1]
+                
                 if row[0] == 'ESQ':
                     enum +=1
                     if ect == 0:
                         task_name = row[10]
-                        if task_name == "Movie Task-Movie Task-bridge":
-                            task_name = "Movie Task-bridge"
-                        if task_name == "Movie Task-Movie Task-incept":
-                            task_name = "Movie Task-incept"
+                        # if task_name == "Movie Task-Movie Task-bridge":
+                        #     task_name = "Movie Task-bridge"
+                        #     row[10] = "Movie Task-bridge"
+                        # if task_name == "Movie Task-Movie Task-incept":
+                        #     task_name = "Movie Task-incept"
+                        #     row[10] = "Movie Task-incept"
                         line_dict["Task_name"] = task_name
                         ect = 1
                     if task_name == row[10]:
                         line_dict[row[3]]=row[4]
                     if enum == 16:
+                        if task_name == "Movie Task-Movie Task-bridge":
+                            line_dict["Task_name"] = "Movie Task-bridge"
+                            #row[10] = "Movie Task-bridge"
+                        if task_name == "Movie Task-Movie Task-incept":
+                            line_dict["Task_name"] = "Movie Task-incept"
+                            #row[10] = "Movie Task-incept"
                         grads = graddict[line_dict["Task_name"]]
                         line_dict["Gradient 1"],line_dict["Gradient 2"],line_dict["Gradient 3"] = grads
                         with open("Analysis/output.csv", 'a', newline="") as outf:
                             wr = csv.writer(outf)
-                            #wr.writerow(list(line_dict.keys()))
                             wr.writerow(list(line_dict.values()))
                         task_name = row[10]
                         line_dict[row[3]]=row[4]
